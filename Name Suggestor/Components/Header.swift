@@ -46,17 +46,70 @@ struct Header: View {
                 }.padding([.leading,.trailing],20)
                     .padding(.bottom,10)
             )
-            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.top)
             //Spacer()
         }
     }
 }
-
+struct DiscoverHeader:View{
+    
+    var body: some View {
+        Rectangle()
+            .fill(MyColor.header)
+            .frame(height: MySize.headerHeight,alignment: .leading)
+            .overlay(
+                VStack(alignment:.leading,spacing: 0){
+                    Spacer()
+                    HStack{
+                    Button{
+                            //return to main
+                        }
+                    label:{
+                        Image(systemName: "arrow.left")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width:MySize.height * 0.05)
+                            .foregroundColor(.white)
+                    }
+                        Spacer()
+                        Text("Beereel")
+                                .foregroundColor(.white)
+                                .font(.system(size: 20).weight(.semibold))
+                        ZStack{
+                        Image("Beereel")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .background(.white.opacity(0.2))
+                            .clipShape(Circle())
+                            .frame(width: MySize.headerHeight * 0.3)
+                        Circle()
+                            .stroke(.white,lineWidth: 3)
+                            .frame(width: MySize.headerHeight * 0.3,height: MySize.headerHeight*0.3)
+                        }
+                    }
+                    Spacer()
+                    HStack{
+                        Text("Discover".uppercased())
+                            .foregroundColor(.white )
+                            .font(.system(size: 30).weight(.semibold))
+                        Spacer()
+                        Text("Character Name")
+                            .foregroundColor(.white.opacity(0.4) )
+                            .font(.system(size: 14).weight(.light))
+                    }
+                }
+                    .padding()
+            )
+    }
+}
 struct Header_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
             Background()
+            VStack{
             Header(tabState: true)
+            DiscoverHeader()
+            }
         }
     }
 }

@@ -9,39 +9,38 @@ import SwiftUI
 
 struct NameTypeOption: View {
     //background
-    let backgroundName:String
     let startColor:Color
     let endColor:Color
     //content
-    let iconName:String
-    let title:String
-    let description:String
+    let type:NameType
     var body: some View {
         Button{}
     label:
         {
-            Image(backgroundName)
-                .resizable().aspectRatio(contentMode: .fit)
+            Image(type.backgroundName)
+                .resizable()
+                //.frame(width: MySize.width * 0.9, height: MySize.height * 0.15)
+                //.aspectRatio(contentMode: .fit)
                 .overlay(
                     ZStack{
                         //foreground
-                        Rectangle().fill(LinearGradient(gradient: Gradient(colors: [startColor.opacity(0.9), endColor.opacity(0.3)]),
+                        Rectangle().fill(LinearGradient(gradient: Gradient(colors: [startColor.opacity(0.9), endColor.opacity(0.5)]),
                     startPoint: .topTrailing,
                     endPoint: .bottomLeading))
                         //content
                         HStack{
                         VStack(alignment:.leading){
                             Spacer()
-                            Image(iconName)
+                            Image(type.iconName)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 50, height: 50)
-                            Text(title)
+                            Text(type.title)
                                 .foregroundColor(.white)
                                 .font(.system(size: 20).weight(.bold))
-                            Text(description)
+                            Text(type.description)
                                 .foregroundColor(.white.opacity(0.8))
-                                .font(.system(size: 14).weight(.light))
+                                .font(.system(size: 12).weight(.light))
                                 .multilineTextAlignment(.leading)
                                 .frame(width:MySize.width * 0.7)
                             
@@ -56,13 +55,61 @@ struct NameTypeOption: View {
     }
 }
 
+struct NameTypeOption2: View {
+    //background
+    let startColor:Color
+    let endColor:Color
+    //content
+    let type:NameType
+    var body: some View {
+        Button{}
+    label:
+        {
+            Image(type.backgroundName)
+                .resizable()
+                //.frame(width: MySize.width * 0.9, height: MySize.height * 0.15)
+                //.aspectRatio(contentMode: .fit)
+                .overlay(
+                    ZStack{
+                        //foreground
+                        Rectangle().fill(LinearGradient(gradient: Gradient(colors: [startColor.opacity(0.7), endColor.opacity(0.3)]),
+                    startPoint: .topTrailing,
+                    endPoint: .bottomLeading))
+                        
+                        //content
+                        HStack{
+                        VStack(alignment:.leading){
+                            Spacer()
+                            Image(type.iconName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 50, height: 50)
+                            Text(type.title)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20).weight(.bold))
+                            Text(type.description)
+                                .foregroundColor(.white.opacity(0.8))
+                                .font(.system(size: 12).weight(.light))
+                                .multilineTextAlignment(.leading)
+                            
+                        }.padding()
+                    }
+   
+                    }
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                //.frame(width: MySize.width * 0.45, height: MySize.height * 0.2)
+        }
+    }
+}
 struct NameTypeOption_Previews: PreviewProvider {
     static var previews: some View {
-        NameTypeOption(backgroundName:"CharacterTab",
+        NameTypeOption2(
                        startColor: MyColor.option_1,
                        endColor: MyColor.option_2,
-                       iconName: "CharacterIcon",
-                       title: "Character Name",
-                       description: "fantasy names like Renly, Brom or scifi names such as Chararbon Molfeli...")
+                       type: NameType(t: "Character Name",
+                                      i: "CharacterIcon",
+                                      b: "CharacterTab",
+                                      d: "fantasy names like Renly, Brom or scifi names such as Chararbon Molfeli..."))
     }
 }
