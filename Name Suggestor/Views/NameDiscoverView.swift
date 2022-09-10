@@ -43,6 +43,7 @@ struct NameDiscoverView: View {
                                 .foregroundColor(.white.opacity(0.6))
                                 .font(.system(size: 24).weight(.bold))
                         )
+                        .shadow(radius: 4)
                         
                 }
             }.padding(.bottom,20)
