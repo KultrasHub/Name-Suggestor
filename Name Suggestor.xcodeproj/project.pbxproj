@@ -19,8 +19,16 @@
 		D225ED4228C8EB5D00A05D11 /* SSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4128C8EB5D00A05D11 /* SSize.swift */; };
 		D225ED4428C8EF5000A05D11 /* TabSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4328C8EF5000A05D11 /* TabSelector.swift */; };
 		D225ED4728C8F8E200A05D11 /* NameTypeOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4628C8F8E200A05D11 /* NameTypeOption.swift */; };
+		D2B8B1B828CCA2AE00392906 /* NameBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8B1B728CCA2AE00392906 /* NameBox.swift */; };
+		D2B8B1BA28CCA33A00392906 /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8B1B928CCA33A00392906 /* NameModel.swift */; };
+		D2B8B1BC28CCA83500392906 /* NameDiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8B1BB28CCA83500392906 /* NameDiscoverView.swift */; };
 		D2CAF84928CB4F5E00FCB9B6 /* NameTypeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAF84828CB4F5D00FCB9B6 /* NameTypeLayout.swift */; };
 		D2CAF84C28CB50D700FCB9B6 /* NameTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAF84B28CB50D700FCB9B6 /* NameTypeModel.swift */; };
+		D2DB6B2C28CE05EF0062242F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB6B2B28CE05EF0062242F /* Button.swift */; };
+		D2DB6B2E28CE076E0062242F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB6B2D28CE076E0062242F /* WelcomeView.swift */; };
+		D2DB6B3028CE0AD40062242F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB6B2F28CE0AD40062242F /* SignInView.swift */; };
+		D2DB6B3228CE0E320062242F /* InputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB6B3128CE0E320062242F /* InputBox.swift */; };
+		D2DB6B3428CE19620062242F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB6B3328CE19620062242F /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +45,16 @@
 		D225ED4128C8EB5D00A05D11 /* SSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSize.swift; sourceTree = "<group>"; };
 		D225ED4328C8EF5000A05D11 /* TabSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSelector.swift; sourceTree = "<group>"; };
 		D225ED4628C8F8E200A05D11 /* NameTypeOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTypeOption.swift; sourceTree = "<group>"; };
+		D2B8B1B728CCA2AE00392906 /* NameBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameBox.swift; sourceTree = "<group>"; };
+		D2B8B1B928CCA33A00392906 /* NameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModel.swift; sourceTree = "<group>"; };
+		D2B8B1BB28CCA83500392906 /* NameDiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDiscoverView.swift; sourceTree = "<group>"; };
 		D2CAF84828CB4F5D00FCB9B6 /* NameTypeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTypeLayout.swift; sourceTree = "<group>"; };
 		D2CAF84B28CB50D700FCB9B6 /* NameTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTypeModel.swift; sourceTree = "<group>"; };
+		D2DB6B2B28CE05EF0062242F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		D2DB6B2D28CE076E0062242F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D2DB6B2F28CE0AD40062242F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		D2DB6B3128CE0E320062242F /* InputBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBox.swift; sourceTree = "<group>"; };
+		D2DB6B3328CE19620062242F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,10 @@
 		D225ED3828C8E5F100A05D11 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D2B8B1BB28CCA83500392906 /* NameDiscoverView.swift */,
+				D2DB6B2D28CE076E0062242F /* WelcomeView.swift */,
+				D2DB6B2F28CE0AD40062242F /* SignInView.swift */,
+				D2DB6B3328CE19620062242F /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +127,9 @@
 				D225ED3A28C8E61000A05D11 /* Header.swift */,
 				D225ED3C28C8E80100A05D11 /* Background.swift */,
 				D225ED4328C8EF5000A05D11 /* TabSelector.swift */,
+				D2B8B1B728CCA2AE00392906 /* NameBox.swift */,
+				D2DB6B2B28CE05EF0062242F /* Button.swift */,
+				D2DB6B3128CE0E320062242F /* InputBox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -133,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				D2CAF84B28CB50D700FCB9B6 /* NameTypeModel.swift */,
+				D2B8B1B928CCA33A00392906 /* NameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,17 +231,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2DB6B3028CE0AD40062242F /* SignInView.swift in Sources */,
+				D2B8B1BA28CCA33A00392906 /* NameModel.swift in Sources */,
 				D225ED3B28C8E61000A05D11 /* Header.swift in Sources */,
 				D225ED4428C8EF5000A05D11 /* TabSelector.swift in Sources */,
+				D2DB6B2C28CE05EF0062242F /* Button.swift in Sources */,
 				D2CAF84C28CB50D700FCB9B6 /* NameTypeModel.swift in Sources */,
+				D2DB6B2E28CE076E0062242F /* WelcomeView.swift in Sources */,
+				D2DB6B3228CE0E320062242F /* InputBox.swift in Sources */,
 				D225ED2F28C8E4B300A05D11 /* Persistence.swift in Sources */,
 				D225ED2828C8E4B100A05D11 /* ContentView.swift in Sources */,
 				D225ED3228C8E4B300A05D11 /* Name_Suggestor.xcdatamodeld in Sources */,
 				D225ED4728C8F8E200A05D11 /* NameTypeOption.swift in Sources */,
+				D2B8B1B828CCA2AE00392906 /* NameBox.swift in Sources */,
 				D2CAF84928CB4F5E00FCB9B6 /* NameTypeLayout.swift in Sources */,
 				D225ED4228C8EB5D00A05D11 /* SSize.swift in Sources */,
 				D225ED2628C8E4B100A05D11 /* Name_SuggestorApp.swift in Sources */,
+				D2DB6B3428CE19620062242F /* SignUpView.swift in Sources */,
 				D225ED3D28C8E80100A05D11 /* Background.swift in Sources */,
+				D2B8B1BC28CCA83500392906 /* NameDiscoverView.swift in Sources */,
 				D225ED4028C8E9C700A05D11 /* SColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
