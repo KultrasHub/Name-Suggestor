@@ -27,7 +27,7 @@ struct Header: View {
                             .clipShape(Circle())
                             .frame(width: MySize.headerHeight * 0.3)
                         Circle()
-                            .stroke(.white,lineWidth: 3)
+                            .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .degrees(360), endAngle: .zero),lineWidth: 3)
                             .frame(width: MySize.headerHeight * 0.3,height: MySize.headerHeight*0.3)
                     }
                     Text("Beereel")
@@ -68,7 +68,7 @@ struct DiscoverHeader:View{
                         Image(systemName: "arrow.left")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width:MySize.height * 0.05)
+                            .frame(width:MySize.height * 0.045)
                             .foregroundColor(.white)
                     }
                         Spacer()
@@ -83,7 +83,7 @@ struct DiscoverHeader:View{
                             .clipShape(Circle())
                             .frame(width: MySize.headerHeight * 0.3)
                         Circle()
-                            .stroke(.white,lineWidth: 3)
+                                .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .zero, endAngle: .degrees(360)),lineWidth: 3)
                             .frame(width: MySize.headerHeight * 0.3,height: MySize.headerHeight*0.3)
                         }
                     }
