@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41BFC40528CDC44D003DC0A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BFC40428CDC44D003DC0A6 /* User.swift */; };
 		D225ED2628C8E4B100A05D11 /* Name_SuggestorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED2528C8E4B100A05D11 /* Name_SuggestorApp.swift */; };
 		D225ED2828C8E4B100A05D11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED2728C8E4B100A05D11 /* ContentView.swift */; };
 		D225ED2A28C8E4B300A05D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D225ED2928C8E4B300A05D11 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41BFC40428CDC44D003DC0A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D225ED2228C8E4B100A05D11 /* Name Suggestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Name Suggestor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D225ED2528C8E4B100A05D11 /* Name_SuggestorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name_SuggestorApp.swift; sourceTree = "<group>"; };
 		D225ED2728C8E4B100A05D11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				D2CAF84B28CB50D700FCB9B6 /* NameTypeModel.swift */,
+				41BFC40428CDC44D003DC0A6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BFC40528CDC44D003DC0A6 /* User.swift in Sources */,
 				D225ED3B28C8E61000A05D11 /* Header.swift in Sources */,
 				D225ED4428C8EF5000A05D11 /* TabSelector.swift in Sources */,
 				D2CAF84C28CB50D700FCB9B6 /* NameTypeModel.swift in Sources */,
