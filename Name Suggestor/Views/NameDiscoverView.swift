@@ -18,23 +18,22 @@ struct NameDiscoverView: View {
                    NameModel(id: 7,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"]),
                    NameModel(id: 8,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"]),
                    NameModel(id: 9,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"])]
+    
     var body: some View {
-        ZStack{
+        ZStack {
             Background()
-            VStack{
+            VStack {
                 DiscoverHeader()
-                ScrollView{
-                ForEach(content)
-                {
-                    name in
-                    NameBox(content: name)
-                }
-                    
+                ScrollView {
+                    ForEach(content) {
+                        name in
+                        NameBox(content: name)
+                    }
                 }
                 Spacer()
                 //re new button
-                Button{}
-                label:{
+                Button {}
+                label: {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(MyColor.header)
                         .frame(width: MySize.width * 0.55, height: MySize.height * 0.1, alignment: .center)
@@ -46,8 +45,10 @@ struct NameDiscoverView: View {
                         .shadow(radius: 4)
                         
                 }
-            }.padding(.bottom,20)
-        }.edgesIgnoringSafeArea(.all)
+            }
+            .padding(.bottom,20)
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

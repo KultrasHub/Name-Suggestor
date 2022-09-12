@@ -6,20 +6,19 @@
 //
 
 import Foundation
-struct NameModel:Identifiable, Codable{
+struct NameModel: Identifiable, Codable {
     let id: Int
     let name: String
-    let tags:[String]
+    let tags: [String]
     
-    init(id: Int, name:String, tags:[String])
-    {
+    init(id: Int, name: String, tags: [String]) {
         self.id = id
         self.name = name
         self.tags = tags
     }
-    func getTag() ->String{
+    func getTag() -> String {
         var result = ""
-        for tag in tags{
+        for tag in tags {
             result = result + tag + ", " 
         }
         return result
