@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct MyColor{
+struct MyColor {
     static let background = Color(red: 0.18, green: 0.18, blue: 0.18)
     static let header = Color(red: 0.22, green: 0.22, blue: 0.22)
     //option color
