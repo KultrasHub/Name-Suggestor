@@ -28,8 +28,8 @@ struct Header: View {
                                     .clipShape(Circle())
                                     .frame(width: MySize.headerHeight * 0.3)
                                 Circle()
-                                    .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .degrees(360), endAngle: .zero),lineWidth: 3)
-                                    .frame(width: MySize.headerHeight * 0.3,height: MySize.headerHeight*0.3)
+                                    .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .degrees(360), endAngle: .zero), lineWidth: 3)
+                                    .frame(width: MySize.headerHeight * 0.3, height: MySize.headerHeight * 0.3)
                             }
                             Text("Beereel")
                                 .foregroundColor(.white)
@@ -43,21 +43,21 @@ struct Header: View {
                             OppoTabSelector(content: "saved names", state: $tabState)
                         }
                     }
-                        .padding([.leading,.trailing],20)
-                        .padding(.bottom,10)
+                        .padding([.leading,.trailing], 20)
+                        .padding(.bottom, 10)
                 )
                 .edgesIgnoringSafeArea(.top)
         }
     }
 }
 
-struct DiscoverHeader:View{
+struct DiscoverHeader: View{
     var body: some View {
         Rectangle()
             .fill(MyColor.header)
-            .frame(height: MySize.headerHeight,alignment: .leading)
+            .frame(height: MySize.headerHeight, alignment: .leading)
             .overlay(
-                VStack(alignment:.leading,spacing: 0) {
+                VStack(alignment: .leading, spacing: 0) {
                     Spacer()
                     HStack {
                         Button {
@@ -72,8 +72,8 @@ struct DiscoverHeader:View{
                         }
                         Spacer()
                         Text("Beereel")
-                                .foregroundColor(.white)
-                                .font(.system(size: 20).weight(.semibold))
+                            .foregroundColor(.white)
+                            .font(.system(size: 20).weight(.semibold))
                         ZStack {
                             Image("Beereel")
                                 .resizable()
@@ -82,18 +82,18 @@ struct DiscoverHeader:View{
                                 .clipShape(Circle())
                                 .frame(width: MySize.headerHeight * 0.3)
                             Circle()
-                                    .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .zero, endAngle: .degrees(360)),lineWidth: 3)
+                                .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .zero, endAngle: .degrees(360)),lineWidth: 3)
                                 .frame(width: MySize.headerHeight * 0.3,height: MySize.headerHeight*0.3)
                         }
                     }
                     Spacer()
                     HStack {
                         Text("Discover".uppercased())
-                            .foregroundColor(.white )
+                            .foregroundColor(.white)
                             .font(.system(size: 30).weight(.semibold))
                         Spacer()
                         Text("Character Name")
-                            .foregroundColor(.white.opacity(0.4) )
+                            .foregroundColor(.white.opacity(0.4))
                             .font(.system(size: 14).weight(.light))
                     }
                 }

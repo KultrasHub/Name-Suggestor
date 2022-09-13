@@ -15,7 +15,7 @@ struct SignInView: View {
                 VStack(alignment:.leading,spacing:12) {
                     //upper content
                     HStack {
-                        Button{}
+                        Button {}
                         label: {
                             Image(systemName: "arrow.left")
                                 .resizable()
@@ -24,7 +24,7 @@ struct SignInView: View {
                                 .foregroundColor(.white)
                         }
                         Spacer()
-                        Button{}
+                        Button {}
                         label: {
                             Text("Sign Up")
                                 .foregroundColor(MyColor.option_1.opacity(0.9))

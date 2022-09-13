@@ -14,20 +14,21 @@ struct NameTypeLayout: View {
                   NameType(t: "Real Name", i: "RealIcon", b: "RealTab", d: "Olivia, Emma, Amelia, Liam, Nikola, Noah and more"),
                   NameType(t: "Weapon Name", i: "WeaponIcon", b: "WeaponTab", d: "witness the Heartbane, Widow Wail, Storm Edge or modern name such as Spencer carbine"),
                   NameType(t: "Pet Name", i: "PetIcon", b: "PetTab", d: "From cutie like daisy, teddy, candy or legends like Thor")]
+    
     var body: some View {
-        VStack(spacing: MySize.width * 0.03){
+        VStack(spacing: MySize.width * 0.03) {
             NameTypeOption(startColor: MyColor.option_1, endColor: MyColor.option_2, type: models[0])
                 .frame(width: MySize.width * 0.95, height: MySize.height * 0.15)
-            HStack(alignment: .top,spacing: MySize.width * 0.03){
+            HStack(alignment: .top,spacing: MySize.width * 0.03) {
                 //left
-                VStack(spacing: MySize.width * 0.03){
+                VStack(spacing: MySize.width * 0.03) {
                     NameTypeOption2(startColor: MyColor.option_2, endColor: MyColor.option_3, type: models[1])
                         .frame(width: MySize.width * 0.45, height: MySize.height * 0.2)
                     NameTypeOption2(startColor: MyColor.option_3, endColor: MyColor.option_4, type: models[3])
                         .frame(width: MySize.width * 0.45, height: MySize.height * 0.3)
                 }
                 //right
-                VStack(spacing: MySize.width * 0.03){
+                VStack(spacing: MySize.width * 0.03) {
                     NameTypeOption2(startColor: MyColor.option_2, endColor: MyColor.option_3, type: models[2])
                         .frame(width: MySize.width * 0.45, height: MySize.height * 0.3)
                     NameTypeOption2(startColor: MyColor.option_3, endColor: MyColor.option_4, type: models[4])
@@ -42,9 +43,9 @@ struct NameTypeLayout: View {
 
 struct NameTypeLayout_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack{
+        ZStack {
             Background()
-            VStack{
+            VStack {
                 Header(tabState: true)
                 NameTypeLayout()
                 Spacer()

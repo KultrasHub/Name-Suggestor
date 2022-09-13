@@ -7,7 +7,8 @@
 
 import Foundation
 import UIKit
-struct MySize{
+
+struct MySize {
     static let width = UIScreen.main.bounds.width;
     static let height = UIScreen.main.bounds.height;
     

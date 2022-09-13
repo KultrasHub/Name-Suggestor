@@ -23,7 +23,7 @@ struct NameBox: View {
             }
             Spacer()
             //save button
-            Button{}
+            Button {}
             label: {
                 Image(systemName: "heart.circle.fill")
                     .resizable()

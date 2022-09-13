@@ -31,7 +31,7 @@ struct TabSelector: View {
     }
 }
 
-struct OppoTabSelector: View{
+struct OppoTabSelector: View {
     let content: String
     @Binding var state: Bool
     

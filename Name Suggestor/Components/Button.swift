@@ -10,7 +10,7 @@ import SwiftUI
 struct MyButton: View {
     let content: String
     var body: some View {
-        Button{}
+        Button {}
         label: {
             RoundedRectangle(cornerRadius: 40)
                 .fill(.white)
@@ -27,7 +27,7 @@ struct MyButton: View {
 struct MyBorderButton: View {
     let content: String
     var body: some View {
-        Button{}
+        Button {}
         label: {
             RoundedRectangle(cornerRadius: 40)
                 .stroke(.white,lineWidth: 2)
