@@ -43,6 +43,56 @@
         "id": 9,
         "name": "Dogvar",
         "tags": ["Fantasy","Game Of Thrones"]
+    },
+    {
+        "id": 10,
+        "name": "Mushballs",
+        "tags": ["Gaming", "Username", "In-game name"]
+    },
+    {
+        "id": 11,
+        "name": "Galaxy Destroyer",
+        "tags": ["Gaming", "Villian", "Weapons"]
+    },
+    {
+        "id": 12,
+        "name": "Buzz buzz",
+        "tags": ["Gaming", "Company startup", "Username", "Business"]
+    },
+    {
+        "id": 13,
+        "name": "Papaya",
+        "tags": ["Fruit", "Company startup", "Business"]
+    },
+    {
+        "id": 14,
+        "name": "Beyoutiful",
+        "tags": ["Fashion", "Branding", "Creative"]
+    },
+    {
+        "id": 15,
+        "name": "Invader Slayer",
+        "tags": ["Weapon", "Gaming", "User"]
+    },
+    {
+        "id": 16,
+        "name": "Pusham",
+        "tags": ["Gaming", "Username"]
+    },
+    {
+        "id" 17,
+        "name": "Ras-Putin",
+        "tags": ["Username", "In-game character", "Gaming"]
+    },
+    {
+        "id": 18,
+        "name": "Micro-Powerrrr",
+        "tags": ["Username", "Gaming", "Red"]
+    },
+    {
+        "id": 19,
+        "name": "Lasta Vista",
+        "tags": ["Gaming", "City", "In-game"]
     }
 
 ]
