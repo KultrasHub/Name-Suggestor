@@ -3,7 +3,7 @@
 //  Name Suggestor
 //
 //  Created by Khoa on 11/09/2022.
-//
+//  Modified by Nam on 14/09/2022
 
 import SwiftUI
 
@@ -14,7 +14,8 @@ struct InputBox: View {
     
     let title: String
     let iconName: String
-    @State private var userEmail: String = ""
+    
+    @Binding var userEmail: String
     @FocusState private var emailFieldIsFocused: Bool
     
     var body: some View {
@@ -61,7 +62,7 @@ struct PasswordBox: View {
     
     let title: String
     let iconName: String
-    @State private var userEmail: String = ""
+    @Binding var userEmail: String
     @FocusState private var emailFieldIsFocused: Bool
     
     var body: some View {
@@ -107,8 +108,8 @@ struct InputBox_Previews: PreviewProvider {
         ZStack {
             Background()
             VStack {
-                InputBox(title: "Email", iconName: "person.crop.circle")
-                PasswordBox(title: "Email", iconName: "person.crop.circle")
+                InputBox(title: "Email", iconName: "person.crop.circle", userEmail: .constant(""))
+                PasswordBox(title: "Email", iconName: "person.crop.circle", userEmail: .constant(""))
             }
         }
     }
