@@ -3,11 +3,19 @@
 //  Name Suggestor
 //
 //  Created by Khoa on 11/09/2022.
-//
+//  Modified by Nam on 14/09/2022
 
 import SwiftUI
 
 struct SignInView: View {
+    
+    @State private var name = ""
+    @State private var pass = ""
+    
+    @ObservedObject private var controller = Controller()
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ZStack {
         Background()
@@ -15,7 +23,9 @@ struct SignInView: View {
                 VStack(alignment:.leading,spacing:12) {
                     //upper content
                     HStack {
-                        Button {}
+                        Button {
+                            presentationMode.wrappedValue.dismiss()
+                        }
                         label: {
                             Image(systemName: "arrow.left")
                                 .resizable()
@@ -49,16 +59,36 @@ struct SignInView: View {
                     .overlay(VStack(spacing: 10) {
                         Spacer()
                         Spacer()
-                        InputBox(title: "Username", iconName: "person.crop.circle")
-                        PasswordBox(title: "Password", iconName: "lock.circle")
+                        InputBox(title: "Username", iconName: "person.crop.circle", userEmail: $name)
+                        PasswordBox(title: "Password", iconName: "lock.circle", userEmail: $pass)
                         Spacer()
-                        MyButton(content: "Sign in")
+                        Button {
+                            controller.checkUserCanLogin(name: name, pass: pass)
+                        } label: {
+                            RoundedRectangle(cornerRadius: 40)
+                                .fill(.white)
+                                .overlay(
+                                    Text("Sign in".uppercased())
+                                        .foregroundColor(MyColor.background)
+                                        .font(.system(size: 20).weight(.bold))
+                                )
+                                .frame(width: MySize.width * 0.8, height: MySize.height * 0.06, alignment: .center)
+                        }
+
                         Spacer()
                         Spacer()
                     })
             }
-            .edgesIgnoringSafeArea(.bottom)
+            .alert(item: $controller.alertItem) { alertItem in
+                Alert(title: alertItem.title,
+                      message: alertItem.message,
+                      dismissButton: .default(alertItem.buttonTitle, action: {
+                    //TODO: NPNAM: xu ly khi login thanh cong
+                }))
+            }
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 
