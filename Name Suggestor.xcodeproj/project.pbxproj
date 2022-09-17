@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		41BFC40528CDC44D003DC0A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BFC40428CDC44D003DC0A6 /* User.swift */; };
-		41FF741028D61AC9007B5C2D /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF740F28D61AC9007B5C2D /* ReadData.swift */; };
-		41FF741228D61ADE007B5C2D /* NameData.json in Resources */ = {isa = PBXBuildFile; fileRef = 41FF741128D61ADE007B5C2D /* NameData.json */; };
+		41DB4E0428D61CA300F378B9 /* Name_Suggestor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41DB4E0228D61CA300F378B9 /* Name_Suggestor.xcdatamodeld */; };
+		41DB4E0628D61CC400F378B9 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 41DB4E0528D61CC400F378B9 /* Data */; };
 		429BF5F728D37A000085E7F4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429BF5F628D37A000085E7F4 /* Alert.swift */; };
 		429BF5FA28D37A080085E7F4 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429BF5F928D37A080085E7F4 /* Controller.swift */; };
-		429BF5FD28D37A210085E7F4 /* Name_Suggestor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 429BF5FB28D37A210085E7F4 /* Name_Suggestor.xcdatamodeld */; };
 		D225ED2628C8E4B100A05D11 /* Name_SuggestorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED2528C8E4B100A05D11 /* Name_SuggestorApp.swift */; };
 		D225ED2828C8E4B100A05D11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED2728C8E4B100A05D11 /* ContentView.swift */; };
 		D225ED2A28C8E4B300A05D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D225ED2928C8E4B300A05D11 /* Assets.xcassets */; };
@@ -38,11 +37,10 @@
 
 /* Begin PBXFileReference section */
 		41BFC40428CDC44D003DC0A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		41FF740F28D61AC9007B5C2D /* ReadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
-		41FF741128D61ADE007B5C2D /* NameData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NameData.json; sourceTree = "<group>"; };
+		41DB4E0328D61CA300F378B9 /* Name_Suggestor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Name_Suggestor.xcdatamodel; sourceTree = "<group>"; };
+		41DB4E0528D61CC400F378B9 /* Data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Data; path = "Name Suggestor/Data"; sourceTree = SOURCE_ROOT; };
 		429BF5F628D37A000085E7F4 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		429BF5F928D37A080085E7F4 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
-		429BF5FC28D37A210085E7F4 /* Name_Suggestor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Name_Suggestor.xcdatamodel; sourceTree = "<group>"; };
 		D225ED2228C8E4B100A05D11 /* Name Suggestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Name Suggestor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D225ED2528C8E4B100A05D11 /* Name_SuggestorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name_SuggestorApp.swift; sourceTree = "<group>"; };
 		D225ED2728C8E4B100A05D11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,15 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41FF740E28D61A85007B5C2D /* Data for Name */ = {
-			isa = PBXGroup;
-			children = (
-				41FF740F28D61AC9007B5C2D /* ReadData.swift */,
-				41FF741128D61ADE007B5C2D /* NameData.json */,
-			);
-			path = "Data for Name";
-			sourceTree = "<group>";
-		};
 		429BF5F828D37A080085E7F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +103,7 @@
 		D225ED2428C8E4B100A05D11 /* Name Suggestor */ = {
 			isa = PBXGroup;
 			children = (
-				41FF740E28D61A85007B5C2D /* Data for Name */,
+				41DB4E0528D61CC400F378B9 /* Data */,
 				D2CAF84A28CB4FF900FCB9B6 /* Model */,
 				D225ED3E28C8E89A00A05D11 /* Constant */,
 				D225ED3928C8E5FE00A05D11 /* Components */,
@@ -124,7 +113,7 @@
 				D225ED2728C8E4B100A05D11 /* ContentView.swift */,
 				D225ED2928C8E4B300A05D11 /* Assets.xcassets */,
 				D225ED2E28C8E4B300A05D11 /* Persistence.swift */,
-				429BF5FB28D37A210085E7F4 /* Name_Suggestor.xcdatamodeld */,
+				41DB4E0228D61CA300F378B9 /* Name_Suggestor.xcdatamodeld */,
 				D225ED2B28C8E4B300A05D11 /* Preview Content */,
 			);
 			path = "Name Suggestor";
@@ -250,8 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41FF741228D61ADE007B5C2D /* NameData.json in Resources */,
 				D225ED2D28C8E4B300A05D11 /* Preview Assets.xcassets in Resources */,
+				41DB4E0628D61CC400F378B9 /* Data in Resources */,
 				D225ED2A28C8E4B300A05D11 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +254,6 @@
 			files = (
 				41BFC40528CDC44D003DC0A6 /* User.swift in Sources */,
 				D2DB6B3028CE0AD40062242F /* SignInView.swift in Sources */,
-				429BF5FD28D37A210085E7F4 /* Name_Suggestor.xcdatamodeld in Sources */,
 				D2B8B1BA28CCA33A00392906 /* NameModel.swift in Sources */,
 				D225ED3B28C8E61000A05D11 /* Header.swift in Sources */,
 				D225ED4428C8EF5000A05D11 /* TabSelector.swift in Sources */,
@@ -277,8 +265,8 @@
 				D225ED2F28C8E4B300A05D11 /* Persistence.swift in Sources */,
 				D225ED2828C8E4B100A05D11 /* ContentView.swift in Sources */,
 				D225ED4728C8F8E200A05D11 /* NameTypeOption.swift in Sources */,
+				41DB4E0428D61CA300F378B9 /* Name_Suggestor.xcdatamodeld in Sources */,
 				429BF5FA28D37A080085E7F4 /* Controller.swift in Sources */,
-				41FF741028D61AC9007B5C2D /* ReadData.swift in Sources */,
 				D2B8B1B828CCA2AE00392906 /* NameBox.swift in Sources */,
 				D2CAF84928CB4F5E00FCB9B6 /* NameTypeLayout.swift in Sources */,
 				D225ED4228C8EB5D00A05D11 /* SSize.swift in Sources */,
@@ -487,14 +475,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		429BF5FB28D37A210085E7F4 /* Name_Suggestor.xcdatamodeld */ = {
+		41DB4E0228D61CA300F378B9 /* Name_Suggestor.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				429BF5FC28D37A210085E7F4 /* Name_Suggestor.xcdatamodel */,
+				41DB4E0328D61CA300F378B9 /* Name_Suggestor.xcdatamodel */,
 			);
-			currentVersion = 429BF5FC28D37A210085E7F4 /* Name_Suggestor.xcdatamodel */;
-			name = Name_Suggestor.xcdatamodeld;
-			path = ../../../Desktop/Name_Suggestor.xcdatamodeld;
+			currentVersion = 41DB4E0328D61CA300F378B9 /* Name_Suggestor.xcdatamodel */;
+			path = Name_Suggestor.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
