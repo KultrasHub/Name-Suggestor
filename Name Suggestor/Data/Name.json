@@ -72,7 +72,7 @@
     {
         "id": 14,
         "name": "Invader Slayer",
-        "tags": ["Gaming", "Creative", "User"]
+        "tags": ["Weapon", "Gaming", "User"]
     },
     {
         "id": 15,
@@ -98,6 +98,106 @@
         "id": 19,
         "name": "Hunter Gunther",
         "tags": ["Username", "Gaming", "Creative"]
+    },
+    {
+        "id": 20,
+        "name": "Beelancer",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 21,
+        "name": "Gener8",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 22,
+        "name": "PineApple",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 23,
+        "name": "Samsing",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 24,
+        "name": "CheapCo",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 25,
+        "name": "Techie",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 26,
+        "name": "Tech-illa",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 27,
+        "name": "Allurist",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 28,
+        "name": "Fashionistic",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 29,
+        "name": "Creative Cats",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 30,
+        "name": "Musicalist Records",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 31,
+        "name": "WeTube",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 32,
+        "name": "Datney",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 33,
+        "name": "Illuminati Entertainment",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 34,
+        "name": "Datney",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 35,
+        "name": "Galaxial Studios",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 36,
+        "name": "Noobmaster69",
+        "tags": ["Gaming", "Username"]
+    },
+    {
+        "id": 37,
+        "name": "SpaceZ",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 38,
+        "name": "BodyNovel",
+        "tags": ["Business", "Username"]
+    },
+    {
+        "id": 39,
+        "name": "Amazoff",
+        "tags": ["Business", "Username"]
     }
 
 ]
