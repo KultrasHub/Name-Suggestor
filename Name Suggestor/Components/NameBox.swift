@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct NameBox: View {
+    let userDefaults = UserDefaults.standard
     var content: NameModel
+    @State var savedNames : [String] = []
+    @State var savedTags : [String] = []
     
     var body: some View {
         HStack {
@@ -23,7 +26,25 @@ struct NameBox: View {
             }
             Spacer()
             //save button
-            Button {}
+            Button {
+                if let unsortData = userDefaults.stringArray(forKey: "savedNames") {
+                    savedNames = unsortData
+                    if !savedNames.contains(content.name) {
+                        savedNames.append(content.name)
+                        if let unsortData = userDefaults.stringArray(forKey: "savedTags") {
+                            savedTags = unsortData
+                            
+                            savedTags.append(content.name)
+                        }
+                    }
+                }
+
+//                savedNames.append(content.name)
+//                savedTags.append(content.tags[0])
+//                userDefaults.set(savedNames, forKey: "savedNames")
+//                userDefaults.set(savedTags, forKey: "savedTags")
+                
+            }
             label: {
                 Image(systemName: "heart.circle.fill")
                     .resizable()
