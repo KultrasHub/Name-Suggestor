@@ -9,20 +9,30 @@ import SwiftUI
 
 struct NameDiscoverView: View {
     let content : [NameModel]
+    @State var randomNumber : [Int] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     var body: some View {
         ZStack {
             Background()
             VStack {
                 DiscoverHeader()
                 ScrollView {
-                    ForEach(content) {
-                        name in
-                        NameBox(content: name)
+                    ForEach(randomNumber, id: \.self) {
+                        number in
+                        NameBox(content: content[number])
                     }
+//                    ForEach(content) {
+//                        name in
+//                        NameBox(content: name)
+//                    }
                 }
                 Spacer()
                 //re new button
-                Button {}
+                Button {
+                    for i in 0...9 {
+                        let randomInt = Int.random(in: 0...39)
+                        randomNumber[i] = randomInt
+                    }
+                }
                 label: {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(MyColor.header)
