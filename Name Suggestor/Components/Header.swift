@@ -10,7 +10,6 @@ import SwiftUI
 struct Header: View {
     @State var tabState:Bool
     var body: some View {
-        VStack{
         Rectangle()
             .fill(MyColor.header)
             .frame(height: MySize.headerHeight)
@@ -37,7 +36,7 @@ struct Header: View {
                 }
                     
                     //tabs
-                    HStack{
+                    HStack {
                         TabSelector(content: "discover", state: $tabState)
                         Spacer()
                         OppoTabSelector(content: "saved names", state: $tabState)
@@ -48,7 +47,6 @@ struct Header: View {
             )
             .edgesIgnoringSafeArea(.top)
             //Spacer()
-        }
     }
 }
 struct DiscoverHeader:View{

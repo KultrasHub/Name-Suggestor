@@ -12,11 +12,13 @@ struct DiscoverView: View {
         ZStack{
             Background()
             VStack{
-                Header(tabState: true)
-                NameTypeLayout()
+                Header(tabState: true).edgesIgnoringSafeArea(.top)
+                Spacer()
+                NameTypeLayout().edgesIgnoringSafeArea(.all)
+                Spacer()
                 Spacer()
             }
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

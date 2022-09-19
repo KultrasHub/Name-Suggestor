@@ -19,6 +19,9 @@
 		D225ED4228C8EB5D00A05D11 /* SSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4128C8EB5D00A05D11 /* SSize.swift */; };
 		D225ED4428C8EF5000A05D11 /* TabSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4328C8EF5000A05D11 /* TabSelector.swift */; };
 		D225ED4728C8F8E200A05D11 /* NameTypeOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4628C8F8E200A05D11 /* NameTypeOption.swift */; };
+		D2B3023028D82462008688D8 /* ScrollTypeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3022F28D82462008688D8 /* ScrollTypeSelector.swift */; };
+		D2B3023228D82648008688D8 /* NameTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3023128D82648008688D8 /* NameTypeButton.swift */; };
+		D2B3023428D82E62008688D8 /* SavedNameBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3023328D82E62008688D8 /* SavedNameBox.swift */; };
 		D2B8B1B828CCA2AE00392906 /* NameBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8B1B728CCA2AE00392906 /* NameBox.swift */; };
 		D2B8B1BA28CCA33A00392906 /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8B1B928CCA33A00392906 /* NameModel.swift */; };
 		D2B8B1BC28CCA83500392906 /* NameDiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8B1BB28CCA83500392906 /* NameDiscoverView.swift */; };
@@ -47,6 +50,9 @@
 		D225ED4128C8EB5D00A05D11 /* SSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSize.swift; sourceTree = "<group>"; };
 		D225ED4328C8EF5000A05D11 /* TabSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSelector.swift; sourceTree = "<group>"; };
 		D225ED4628C8F8E200A05D11 /* NameTypeOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTypeOption.swift; sourceTree = "<group>"; };
+		D2B3022F28D82462008688D8 /* ScrollTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTypeSelector.swift; sourceTree = "<group>"; };
+		D2B3023128D82648008688D8 /* NameTypeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTypeButton.swift; sourceTree = "<group>"; };
+		D2B3023328D82E62008688D8 /* SavedNameBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNameBox.swift; sourceTree = "<group>"; };
 		D2B8B1B728CCA2AE00392906 /* NameBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameBox.swift; sourceTree = "<group>"; };
 		D2B8B1B928CCA33A00392906 /* NameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModel.swift; sourceTree = "<group>"; };
 		D2B8B1BB28CCA83500392906 /* NameDiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDiscoverView.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 				D2B8B1B728CCA2AE00392906 /* NameBox.swift */,
 				D2DB6B2B28CE05EF0062242F /* Button.swift */,
 				D2DB6B3128CE0E320062242F /* InputBox.swift */,
+				D2B3022F28D82462008688D8 /* ScrollTypeSelector.swift */,
+				D2B3023328D82E62008688D8 /* SavedNameBox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			children = (
 				D225ED4628C8F8E200A05D11 /* NameTypeOption.swift */,
 				D2CAF84828CB4F5D00FCB9B6 /* NameTypeLayout.swift */,
+				D2B3023128D82648008688D8 /* NameTypeButton.swift */,
 			);
 			path = NameOption;
 			sourceTree = "<group>";
@@ -237,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B3023028D82462008688D8 /* ScrollTypeSelector.swift in Sources */,
 				D2DB6B3028CE0AD40062242F /* SignInView.swift in Sources */,
 				D2B8B1BA28CCA33A00392906 /* NameModel.swift in Sources */,
 				D225ED3B28C8E61000A05D11 /* Header.swift in Sources */,
@@ -257,7 +267,9 @@
 				D2DB6B3428CE19620062242F /* SignUpView.swift in Sources */,
 				FBFA8C9A28D8162700BF7EF7 /* SavedFile.swift in Sources */,
 				D225ED3D28C8E80100A05D11 /* Background.swift in Sources */,
+				D2B3023428D82E62008688D8 /* SavedNameBox.swift in Sources */,
 				D2B8B1BC28CCA83500392906 /* NameDiscoverView.swift in Sources */,
+				D2B3023228D82648008688D8 /* NameTypeButton.swift in Sources */,
 				D225ED4028C8E9C700A05D11 /* SColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

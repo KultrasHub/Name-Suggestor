@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct SavedFile: View {
+    @State var currentSelected:Int = 0
+    let content = ["Tommen StormBorn","Lala LightningCounter","Irelia"]
     var body: some View {
         ZStack{
             Background()
             VStack{
-                Header(tabState: true)
-                
+                Header(tabState: false)
+                ScrollTypeSelector(currentSelected: $currentSelected)
+                ScrollView{
+                    ForEach(content,id: \.self)
+                    {
+                        name in
+                        SavedNameBox(content: name)
+                    }
+                    
+                }
                 Spacer()
             }
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -34,7 +34,7 @@ struct NameTypeLayout: View {
                         .frame(width: MySize.width * 0.45, height: MySize.height * 0.2)
                 }
             }
-            Spacer()
+            //Spacer()
         }
         .padding([.leading,.trailing],5)
     }
@@ -45,9 +45,9 @@ struct NameTypeLayout_Previews: PreviewProvider {
         ZStack{
             Background()
             VStack{
-                Header(tabState: true)
+                //Header(tabState: true)
                 NameTypeLayout()
-                Spacer()
+                //Spacer()
             }
         }
     }
