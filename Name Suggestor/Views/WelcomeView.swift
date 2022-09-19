@@ -9,14 +9,14 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-        ZStack{
+        ZStack {
             Background()
-            VStack{
+            VStack {
                 Spacer()
                 RoundedRectangle(cornerRadius: 40)
                     .fill(MyColor.header)
                     .frame(height: MySize.height * 0.65)
-                    .overlay(VStack(spacing: 10){
+                    .overlay(VStack(spacing: 10) {
                         //app icon
                         Spacer()
                         Image("CharacterIcon")
@@ -24,7 +24,7 @@ struct WelcomeView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width:70)
                         //app name
-                        Text("Name Suggestor")
+                        Text("NameHub")
                             .foregroundColor(.white)
                             .font(.system(size: 20).weight(.bold))
                         //intro quote
@@ -35,10 +35,11 @@ struct WelcomeView: View {
                             .multilineTextAlignment(.center)
                         Spacer()
                         MyButton(content: "Sign In")
-                        MyBorderButton(content: "SignUp")
+                        MyBorderButton(content: "Sign Up")
                         Spacer()
                     })
-            }.edgesIgnoringSafeArea(.bottom)
+            }
+            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }

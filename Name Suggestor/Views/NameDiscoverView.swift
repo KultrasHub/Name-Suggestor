@@ -8,33 +8,32 @@
 import SwiftUI
 
 struct NameDiscoverView: View {
-    let content = [NameModel(id: 0,name: "Tommen", tags: ["Fantasy","Game Of Thrones","Warrior Name"]),
-                   NameModel(id: 1,name: "Mias", tags: ["Fantasy","King Name","Warrior Name"]),
-                   NameModel(id: 2,name: "Rogboc", tags: ["Fantasy","Orc Name","Middle Earth"]),
-                   NameModel(id: 3,name: "Tholvir", tags: ["Fantasy","Drawf Name","Middle Earth"]),
-                   NameModel(id: 4,name: "Dryrigg", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 5,name: "Torgrim", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 6,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 7,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 8,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 9,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"])]
+    let content : [NameModel]
+    @State var randomNumber : [Int] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     var body: some View {
-        ZStack{
+        ZStack {
             Background()
-            VStack{
+            VStack {
                 DiscoverHeader()
-                ScrollView{
-                ForEach(content)
-                {
-                    name in
-                    NameBox(content: name)
-                }
-                    
+                ScrollView {
+                    ForEach(randomNumber, id: \.self) {
+                        number in
+                        NameBox(content: content[number])
+                    }
+//                    ForEach(content) {
+//                        name in
+//                        NameBox(content: name)
+//                    }
                 }
                 Spacer()
                 //re new button
-                Button{}
-                label:{
+                Button {
+                    for i in 0...9 {
+                        let randomInt = Int.random(in: 0...39)
+                        randomNumber[i] = randomInt
+                    }
+                }
+                label: {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(MyColor.header)
                         .frame(width: MySize.width * 0.55, height: MySize.height * 0.1, alignment: .center)
@@ -46,13 +45,15 @@ struct NameDiscoverView: View {
                         .shadow(radius: 4)
                         
                 }
-            }.padding(.bottom,20)
-        }.edgesIgnoringSafeArea(.all)
+            }
+            .padding(.bottom,20)
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct NameDiscoverView_Previews: PreviewProvider {
     static var previews: some View {
-        NameDiscoverView()
+        NameDiscoverView(content: names)
     }
 }

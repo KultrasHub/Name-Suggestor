@@ -12,42 +12,40 @@ struct NameTypeOption: View {
     let startColor:Color
     let endColor:Color
     //content
-    let type:NameType
+    let type: NameType
     var body: some View {
-        Button{}
-    label:
-        {
+        Button {}
+        label: {
             Image(type.backgroundName)
                 .resizable()
                 //.frame(width: MySize.width * 0.9, height: MySize.height * 0.15)
                 //.aspectRatio(contentMode: .fit)
                 .overlay(
-                    ZStack{
+                    ZStack {
                         //foreground
                         Rectangle().fill(LinearGradient(gradient: Gradient(colors: [startColor.opacity(0.9), endColor.opacity(0.5)]),
-                    startPoint: .topTrailing,
-                    endPoint: .bottomLeading))
+                                                        startPoint: .topTrailing,
+                                                        endPoint: .bottomLeading))
                         //content
-                        HStack{
-                        VStack(alignment:.leading){
+                        HStack {
+                            VStack(alignment:.leading) {
+                                Spacer()
+                                Image(type.iconName)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 50, height: 50)
+                                Text(type.title)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20).weight(.bold))
+                                Text(type.description)
+                                    .foregroundColor(.white.opacity(0.8))
+                                    .font(.system(size: 12).weight(.light))
+                                    .multilineTextAlignment(.leading)
+                                    .frame(width:MySize.width * 0.7)
+                            }
+                            .padding()
                             Spacer()
-                            Image(type.iconName)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 50)
-                            Text(type.title)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20).weight(.bold))
-                            Text(type.description)
-                                .foregroundColor(.white.opacity(0.8))
-                                .font(.system(size: 12).weight(.light))
-                                .multilineTextAlignment(.leading)
-                                .frame(width:MySize.width * 0.7)
-                            
-                        }.padding()
-                            Spacer()
-                    }
-   
+                        }
                     }
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -57,44 +55,42 @@ struct NameTypeOption: View {
 
 struct NameTypeOption2: View {
     //background
-    let startColor:Color
-    let endColor:Color
+    let startColor: Color
+    let endColor: Color
     //content
-    let type:NameType
+    let type: NameType
+    
     var body: some View {
-        Button{}
-    label:
-        {
+        Button {}
+        label: {
             Image(type.backgroundName)
                 .resizable()
                 //.frame(width: MySize.width * 0.9, height: MySize.height * 0.15)
                 //.aspectRatio(contentMode: .fit)
                 .overlay(
-                    ZStack{
+                    ZStack {
                         //foreground
                         Rectangle().fill(LinearGradient(gradient: Gradient(colors: [startColor.opacity(0.7), endColor.opacity(0.3)]),
-                    startPoint: .topTrailing,
-                    endPoint: .bottomLeading))
-                        
+                                                        startPoint: .topTrailing,
+                                                        endPoint: .bottomLeading))
                         //content
-                        HStack{
-                        VStack(alignment:.leading){
-                            Spacer()
-                            Image(type.iconName)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 50)
-                            Text(type.title)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20).weight(.bold))
-                            Text(type.description)
-                                .foregroundColor(.white.opacity(0.8))
-                                .font(.system(size: 12).weight(.light))
-                                .multilineTextAlignment(.leading)
-                            
-                        }.padding()
-                    }
-   
+                        HStack {
+                            VStack(alignment:.leading) {
+                                Spacer()
+                                Image(type.iconName)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 50, height: 50)
+                                Text(type.title)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20).weight(.bold))
+                                Text(type.description)
+                                    .foregroundColor(.white.opacity(0.8))
+                                    .font(.system(size: 12).weight(.light))
+                                    .multilineTextAlignment(.leading)
+                            }
+                            .padding()
+                        }
                     }
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))

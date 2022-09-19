@@ -9,11 +9,11 @@ import SwiftUI
 
 struct NameBox: View {
     var content: NameModel
+    
     var body: some View {
-        HStack{
+        HStack {
             //name
-            VStack(alignment:.leading)
-            {
+            VStack(alignment:.leading) {
                 Text(content.name)
                     .foregroundColor(.white)
                     .font(.system(size: 20).weight(.light))
@@ -23,22 +23,23 @@ struct NameBox: View {
             }
             Spacer()
             //save button
-            Button{}
-            label:{
+            Button {}
+            label: {
                 Image(systemName: "heart.circle.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height:30)
                     .foregroundColor(.white.opacity(0.2))
             }
-        }.padding([.leading,.trailing],20)
-            .padding([.top,.bottom],10)
+        }
+        .padding([.leading,.trailing],20)
+        .padding([.top,.bottom],10)
     }
 }
 
 struct NameBox_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack{
+        ZStack {
             Background()
             NameBox(content: NameModel(id: 0, name: "Tommen Baratheon", tags: ["fantasy","king name", "game of thrones"]))
         }

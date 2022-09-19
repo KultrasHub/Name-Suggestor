@@ -6,13 +6,12 @@
 //
 
 import Foundation
-struct NameType{
-    let title:String
-    let iconName:String
-    let backgroundName:String
-    let description:String
-    init(t: String, i:String, b: String,d:String)
-    {
+struct NameType {
+    let title: String
+    let iconName: String
+    let backgroundName: String
+    let description: String
+    init(t: String, i: String, b: String,d: String) {
         title = t
         iconName = i
         backgroundName = b
