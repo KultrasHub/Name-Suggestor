@@ -14,8 +14,7 @@ struct SignInView: View {
     
     @ObservedObject private var controller = Controller()
     
-    @Environment(\.presentationMode) var presentationMode
-    
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
         ZStack {
         Background()
@@ -24,7 +23,7 @@ struct SignInView: View {
                     //upper content
                     HStack {
                         Button {
-                            presentationMode.wrappedValue.dismiss()
+                            env.currentViewStage = .welcome
                         }
                         label: {
                             Image(systemName: "arrow.left")
@@ -34,7 +33,10 @@ struct SignInView: View {
                                 .foregroundColor(.white)
                         }
                         Spacer()
-                        Button {}
+                        Button {
+                            //env.lastVisited = .signIn
+                            env.currentViewStage = .signUp
+                        }
                         label: {
                             Text("Sign Up")
                                 .foregroundColor(MyColor.option_1.opacity(0.9))
@@ -63,7 +65,7 @@ struct SignInView: View {
                         PasswordBox(title: "Password", iconName: "lock.circle", userEmail: $pass)
                         Spacer()
                         Button {
-                            controller.checkUserCanLogin(name: name, pass: pass)
+                            let result = controller.checkUserCanLogin(name: name, pass: pass)
                         } label: {
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(.white)
@@ -83,6 +85,10 @@ struct SignInView: View {
                 Alert(title: alertItem.title,
                       message: alertItem.message,
                       dismissButton: .default(alertItem.buttonTitle, action: {
+                    if(controller.loginState)
+                    {
+                        env.currentViewStage = .discover
+                    }
                     //TODO: NPNAM: xu ly khi login thanh cong
                 }))
             }
@@ -94,6 +100,6 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInView().environmentObject(GlobalEnvironment())
     }
 }

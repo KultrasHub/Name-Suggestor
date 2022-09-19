@@ -24,6 +24,8 @@
 		D225ED4228C8EB5D00A05D11 /* SSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4128C8EB5D00A05D11 /* SSize.swift */; };
 		D225ED4428C8EF5000A05D11 /* TabSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4328C8EF5000A05D11 /* TabSelector.swift */; };
 		D225ED4728C8F8E200A05D11 /* NameTypeOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED4628C8F8E200A05D11 /* NameTypeOption.swift */; };
+		D280FEA628D87164000D0EB3 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D280FEA528D87164000D0EB3 /* SampleView.swift */; };
+		D280FEA828D87207000D0EB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D280FEA728D87207000D0EB3 /* ViewController.swift */; };
 		D2B3023028D82462008688D8 /* ScrollTypeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3022F28D82462008688D8 /* ScrollTypeSelector.swift */; };
 		D2B3023228D82648008688D8 /* NameTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3023128D82648008688D8 /* NameTypeButton.swift */; };
 		D2B3023428D82E62008688D8 /* SavedNameBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3023328D82E62008688D8 /* SavedNameBox.swift */; };
@@ -60,6 +62,8 @@
 		D225ED4128C8EB5D00A05D11 /* SSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSize.swift; sourceTree = "<group>"; };
 		D225ED4328C8EF5000A05D11 /* TabSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSelector.swift; sourceTree = "<group>"; };
 		D225ED4628C8F8E200A05D11 /* NameTypeOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTypeOption.swift; sourceTree = "<group>"; };
+		D280FEA528D87164000D0EB3 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		D280FEA728D87207000D0EB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2B3022F28D82462008688D8 /* ScrollTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTypeSelector.swift; sourceTree = "<group>"; };
 		D2B3023128D82648008688D8 /* NameTypeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTypeButton.swift; sourceTree = "<group>"; };
 		D2B3023328D82E62008688D8 /* SavedNameBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNameBox.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				D2DB6B3328CE19620062242F /* SignUpView.swift */,
 				FBFA8C9928D8162700BF7EF7 /* SavedFile.swift */,
 				FBFA8C9B28D8180600BF7EF7 /* DiscoverView.swift */,
+				D280FEA528D87164000D0EB3 /* SampleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			children = (
 				D225ED3F28C8E9C700A05D11 /* SColor.swift */,
 				D225ED4128C8EB5D00A05D11 /* SSize.swift */,
+				D280FEA728D87207000D0EB3 /* ViewController.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -287,7 +293,9 @@
 				D2DB6B2C28CE05EF0062242F /* Button.swift in Sources */,
 				429BF5F728D37A000085E7F4 /* Alert.swift in Sources */,
 				D2CAF84C28CB50D700FCB9B6 /* NameTypeModel.swift in Sources */,
+				D280FEA828D87207000D0EB3 /* ViewController.swift in Sources */,
 				D2DB6B2E28CE076E0062242F /* WelcomeView.swift in Sources */,
+				D280FEA628D87164000D0EB3 /* SampleView.swift in Sources */,
 				D2DB6B3228CE0E320062242F /* InputBox.swift in Sources */,
 				D225ED2F28C8E4B300A05D11 /* Persistence.swift in Sources */,
 				D225ED2828C8E4B100A05D11 /* ContentView.swift in Sources */,

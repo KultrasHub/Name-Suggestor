@@ -14,19 +14,20 @@ struct SignUpView: View {
     @State private var pass = ""
     
     @ObservedObject private var controller = Controller()
-    @State private var canGoToLoginView: Bool = false
-    
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
         NavigationView {
             ZStack{
             Background()
                 VStack{
-                    NavigationLink(destination: SignInView(), isActive: $canGoToLoginView,
-                                        label: { EmptyView() })
                     VStack(alignment:.leading,spacing:12){
                         //upper content
                         HStack{
-                            Button {}
+                            Button {
+                                //let temp = env.lastVisited
+                                //env.lastVisited = env.currentViewStage
+                                env.currentViewStage = .welcome
+                            }
                             label: {
                                 Image(systemName: "arrow.left")
                                     .resizable()
@@ -36,7 +37,8 @@ struct SignUpView: View {
                             }
                             Spacer()
                             Button {
-                                self.canGoToLoginView = true
+                                //env.lastVisited = .signUp
+                                env.currentViewStage = .signIn
                             }
                             label: {
                                 Text("Sign In")
@@ -89,7 +91,9 @@ struct SignUpView: View {
                           message: alertItem.message,
                           dismissButton: .default(alertItem.buttonTitle, action: {
                         if alertItem.id == 5 {
-                            self.canGoToLoginView = true
+                            //GO TO SIGN IN
+                            env.lastVisited = .signUp
+                            env.currentViewStage = .signIn
                         }
                     }))
                 }
@@ -102,6 +106,6 @@ struct SignUpView: View {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpView().environmentObject(GlobalEnvironment())
     }
 }

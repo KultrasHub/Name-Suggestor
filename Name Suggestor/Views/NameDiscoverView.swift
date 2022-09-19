@@ -55,5 +55,6 @@ struct NameDiscoverView: View {
 struct NameDiscoverView_Previews: PreviewProvider {
     static var previews: some View {
         NameDiscoverView(content: names)
+            .environmentObject(GlobalEnvironment())
     }
 }

@@ -12,13 +12,14 @@ final class Controller: ObservableObject {
     
     let container = NSPersistentContainer(name: "Name_Suggestor")
     @Published var alertItem: AlertItem?
-    
+    @Published var loginState: Bool
     init() {
         container.loadPersistentStores { description, error in
             if let error = error {
                 print("Failed to load data in DataController \(error.localizedDescription)")
             }
         }
+        loginState = false
     }
         
     func save(context: NSManagedObjectContext) {
@@ -78,15 +79,17 @@ final class Controller: ObservableObject {
         return true
     }
     
-    func checkUserCanLogin(name: String, pass: String) {
+    func checkUserCanLogin(name: String, pass: String) -> Bool{
         if name == "" {
             alertItem = AlertContext.userNameMissing
-            return
+            loginState = false
+            return false
         }
         
         if pass == "" {
             alertItem = AlertContext.passwordMissing
-            return
+            loginState = false
+            return false
         }
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "UserInfo")
@@ -94,13 +97,16 @@ final class Controller: ObservableObject {
             let listU = try container.viewContext.fetch(fetchRequest) as? [UserInfo]
             if listU?.contains(where: {$0.username == name && $0.password == pass }) == true {
                 alertItem = AlertContext.loginSuccess
-                return
+                loginState = true
+                return true
             }
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         
         alertItem = AlertContext.loginFail
+        loginState = false
+        return false
     }
     
     func isValidEmail(email: String) -> Bool {

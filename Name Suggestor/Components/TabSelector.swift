@@ -10,11 +10,18 @@ import SwiftUI
 struct TabSelector: View {
     let content: String
     @Binding var state: Bool
-    
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
         Button {
             if(!state) {
                 state = !state
+                if(env.tagSelected == 0)
+                {
+                    env.currentViewStage = .discover
+                }
+                else{
+                    env.currentViewStage = .nameDiscover
+                }
             }
         }
         label: {
@@ -34,11 +41,12 @@ struct TabSelector: View {
 struct OppoTabSelector: View {
     let content: String
     @Binding var state: Bool
-    
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
         Button {
             if(state) {
                 state = !state
+                env.currentViewStage = .saved
             }
         }
         label: {
@@ -62,7 +70,9 @@ struct TabSelector_Previews: PreviewProvider {
             Background()
             HStack {
                 TabSelector(content: "Discover",state: .constant(true))
+                    .environmentObject(GlobalEnvironment())
                 OppoTabSelector(content: "Discover",state: .constant(true))
+                    .environmentObject(GlobalEnvironment())
             }
         }
     }
