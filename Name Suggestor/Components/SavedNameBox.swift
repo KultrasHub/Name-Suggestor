@@ -18,6 +18,10 @@ struct SavedNameBox: View {
         HStack(spacing:15){
             //name
             TextField(content, text: $currentText)
+                .foregroundColor(.white)
+                .font(.system(size: 20).weight(.light))
+                .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
 //                Text(content)
 //                    .foregroundColor(.white)
 //                    .font(.system(size: 20).weight(.light))
@@ -25,10 +29,14 @@ struct SavedNameBox: View {
             Spacer()
             //edit button
             Button{
-                
+                if(currentText != content)
+                {
+                    //only accept if detect change
+                    
+                }
             }
             label:{
-                Image(systemName: "pencil.circle.fill")
+                Image(systemName: "square.and.pencil")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height:30)
