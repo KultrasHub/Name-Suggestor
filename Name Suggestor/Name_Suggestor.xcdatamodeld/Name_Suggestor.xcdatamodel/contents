@@ -15,7 +15,7 @@
     </entity>
     <elements>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-        <element name="Name" positionX="-63" positionY="-9" width="128" height="74"/>
-        <element name="UserInfo" positionX="-63" positionY="9" width="128" height="74"/>
+        <element name="Name" positionX="150.703125" positionY="18.3828125" width="128" height="74"/>
+        <element name="UserInfo" positionX="-150.19921875" positionY="113.8671875" width="128" height="88"/>
     </elements>
 </model>
