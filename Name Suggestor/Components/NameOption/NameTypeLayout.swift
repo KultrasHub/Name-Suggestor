@@ -10,7 +10,7 @@ import SwiftUI
 struct NameTypeLayout: View {
     //sample models
     let models = [NameType(t: "Character Name", i: "CharacterIcon", b: "CharacterTab", d: "fantasy names like Renly, Brom or scifi names such as Chararbon Molfeli..."),
-                  NameType(t: "Team Name", i: "TeamIcon", b: "TeamTab", d: "you might like Office Heroes or Desk Champions..."),
+                  NameType(t: "Team Name", i: "TeamIcon", b: "Teamtab", d: "you might like Office Heroes or Desk Champions..."),
                   NameType(t: "Real Name", i: "RealIcon", b: "RealTab", d: "Olivia, Emma, Amelia, Liam, Nikola, Noah and more"),
                   NameType(t: "Weapon Name", i: "WeaponIcon", b: "WeaponTab", d: "witness the Heartbane, Widow Wail, Storm Edge or modern name such as Spencer carbine"),
                   NameType(t: "Pet Name", i: "PetIcon", b: "PetTab", d: "From cutie like daisy, teddy, candy or legends like Thor")]

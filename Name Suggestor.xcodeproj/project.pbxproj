@@ -29,6 +29,8 @@
 		D2DB6B3028CE0AD40062242F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB6B2F28CE0AD40062242F /* SignInView.swift */; };
 		D2DB6B3228CE0E320062242F /* InputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB6B3128CE0E320062242F /* InputBox.swift */; };
 		D2DB6B3428CE19620062242F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB6B3328CE19620062242F /* SignUpView.swift */; };
+		FBFA8C9A28D8162700BF7EF7 /* SavedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA8C9928D8162700BF7EF7 /* SavedFile.swift */; };
+		FBFA8C9C28D8180600BF7EF7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA8C9B28D8180600BF7EF7 /* DiscoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		D2DB6B2F28CE0AD40062242F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D2DB6B3128CE0E320062242F /* InputBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBox.swift; sourceTree = "<group>"; };
 		D2DB6B3328CE19620062242F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FBFA8C9928D8162700BF7EF7 /* SavedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFile.swift; sourceTree = "<group>"; };
+		FBFA8C9B28D8180600BF7EF7 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				D2DB6B2D28CE076E0062242F /* WelcomeView.swift */,
 				D2DB6B2F28CE0AD40062242F /* SignInView.swift */,
 				D2DB6B3328CE19620062242F /* SignUpView.swift */,
+				FBFA8C9928D8162700BF7EF7 /* SavedFile.swift */,
+				FBFA8C9B28D8180600BF7EF7 /* DiscoverView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,10 +250,12 @@
 				D225ED3228C8E4B300A05D11 /* Name_Suggestor.xcdatamodeld in Sources */,
 				D225ED4728C8F8E200A05D11 /* NameTypeOption.swift in Sources */,
 				D2B8B1B828CCA2AE00392906 /* NameBox.swift in Sources */,
+				FBFA8C9C28D8180600BF7EF7 /* DiscoverView.swift in Sources */,
 				D2CAF84928CB4F5E00FCB9B6 /* NameTypeLayout.swift in Sources */,
 				D225ED4228C8EB5D00A05D11 /* SSize.swift in Sources */,
 				D225ED2628C8E4B100A05D11 /* Name_SuggestorApp.swift in Sources */,
 				D2DB6B3428CE19620062242F /* SignUpView.swift in Sources */,
+				FBFA8C9A28D8162700BF7EF7 /* SavedFile.swift in Sources */,
 				D225ED3D28C8E80100A05D11 /* Background.swift in Sources */,
 				D2B8B1BC28CCA83500392906 /* NameDiscoverView.swift in Sources */,
 				D225ED4028C8E9C700A05D11 /* SColor.swift in Sources */,
