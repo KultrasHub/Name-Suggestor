@@ -80,7 +80,7 @@
         "tags": ["Gaming", "Username"]
     },
     {
-        "id" 16,
+        "id": 16,
         "name": "Ras-Putin",
         "tags": ["Username", "In-game character", "Gaming"]
     },
@@ -201,3 +201,4 @@
     }
 
 ]
+

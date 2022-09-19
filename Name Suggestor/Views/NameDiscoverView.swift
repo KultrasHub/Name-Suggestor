@@ -8,17 +8,7 @@
 import SwiftUI
 
 struct NameDiscoverView: View {
-    let content = [NameModel(id: 0,name: "Tommen", tags: ["Fantasy","Game Of Thrones","Warrior Name"]),
-                   NameModel(id: 1,name: "Mias", tags: ["Fantasy","King Name","Warrior Name"]),
-                   NameModel(id: 2,name: "Rogboc", tags: ["Fantasy","Orc Name","Middle Earth"]),
-                   NameModel(id: 3,name: "Tholvir", tags: ["Fantasy","Drawf Name","Middle Earth"]),
-                   NameModel(id: 4,name: "Dryrigg", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 5,name: "Torgrim", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 6,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 7,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 8,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"]),
-                   NameModel(id: 9,name: "Dogvar", tags: ["Fantasy","Game Of Thrones"])]
-    
+    let content : [NameModel]
     var body: some View {
         ZStack {
             Background()
@@ -54,6 +44,6 @@ struct NameDiscoverView: View {
 
 struct NameDiscoverView_Previews: PreviewProvider {
     static var previews: some View {
-        NameDiscoverView()
+        NameDiscoverView(content: names)
     }
 }

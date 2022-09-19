@@ -24,7 +24,7 @@ struct WelcomeView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width:70)
                         //app name
-                        Text("Name Suggestor")
+                        Text("NameHub")
                             .foregroundColor(.white)
                             .font(.system(size: 20).weight(.bold))
                         //intro quote

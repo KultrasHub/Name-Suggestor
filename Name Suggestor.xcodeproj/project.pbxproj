@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4120AC8C28D82F0500E1C498 /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120AC8B28D82F0500E1C498 /* ReadData.swift */; };
+		4120AC8E28D82F1300E1C498 /* Name.json in Resources */ = {isa = PBXBuildFile; fileRef = 4120AC8D28D82F1300E1C498 /* Name.json */; };
 		41BFC40528CDC44D003DC0A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BFC40428CDC44D003DC0A6 /* User.swift */; };
 		41DB4E0428D61CA300F378B9 /* Name_Suggestor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41DB4E0228D61CA300F378B9 /* Name_Suggestor.xcdatamodeld */; };
-		41DB4E0628D61CC400F378B9 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 41DB4E0528D61CC400F378B9 /* Data */; };
 		429BF5F728D37A000085E7F4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429BF5F628D37A000085E7F4 /* Alert.swift */; };
 		429BF5FA28D37A080085E7F4 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429BF5F928D37A080085E7F4 /* Controller.swift */; };
 		D225ED2628C8E4B100A05D11 /* Name_SuggestorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225ED2528C8E4B100A05D11 /* Name_SuggestorApp.swift */; };
@@ -36,9 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4120AC8B28D82F0500E1C498 /* ReadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
+		4120AC8D28D82F1300E1C498 /* Name.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Name.json; sourceTree = "<group>"; };
 		41BFC40428CDC44D003DC0A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		41DB4E0328D61CA300F378B9 /* Name_Suggestor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Name_Suggestor.xcdatamodel; sourceTree = "<group>"; };
-		41DB4E0528D61CC400F378B9 /* Data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Data; path = "Name Suggestor/Data"; sourceTree = SOURCE_ROOT; };
 		429BF5F628D37A000085E7F4 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		429BF5F928D37A080085E7F4 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		D225ED2228C8E4B100A05D11 /* Name Suggestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Name Suggestor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4120AC8A28D82EE600E1C498 /* Static Data */ = {
+			isa = PBXGroup;
+			children = (
+				4120AC8B28D82F0500E1C498 /* ReadData.swift */,
+				4120AC8D28D82F1300E1C498 /* Name.json */,
+			);
+			path = "Static Data";
+			sourceTree = "<group>";
+		};
 		429BF5F828D37A080085E7F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +114,7 @@
 		D225ED2428C8E4B100A05D11 /* Name Suggestor */ = {
 			isa = PBXGroup;
 			children = (
-				41DB4E0528D61CC400F378B9 /* Data */,
+				4120AC8A28D82EE600E1C498 /* Static Data */,
 				D2CAF84A28CB4FF900FCB9B6 /* Model */,
 				D225ED3E28C8E89A00A05D11 /* Constant */,
 				D225ED3928C8E5FE00A05D11 /* Components */,
@@ -240,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D225ED2D28C8E4B300A05D11 /* Preview Assets.xcassets in Resources */,
-				41DB4E0628D61CC400F378B9 /* Data in Resources */,
+				4120AC8E28D82F1300E1C498 /* Name.json in Resources */,
 				D225ED2A28C8E4B300A05D11 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +278,7 @@
 				D225ED4728C8F8E200A05D11 /* NameTypeOption.swift in Sources */,
 				41DB4E0428D61CA300F378B9 /* Name_Suggestor.xcdatamodeld in Sources */,
 				429BF5FA28D37A080085E7F4 /* Controller.swift in Sources */,
+				4120AC8C28D82F0500E1C498 /* ReadData.swift in Sources */,
 				D2B8B1B828CCA2AE00392906 /* NameBox.swift in Sources */,
 				D2CAF84928CB4F5E00FCB9B6 /* NameTypeLayout.swift in Sources */,
 				D225ED4228C8EB5D00A05D11 /* SSize.swift in Sources */,
