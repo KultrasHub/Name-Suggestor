@@ -65,7 +65,7 @@ struct SignInView: View {
                         PasswordBox(title: "Password", iconName: "lock.circle", userEmail: $pass)
                         Spacer()
                         Button {
-                            let result = controller.checkUserCanLogin(name: name, pass: pass)
+                            controller.checkUserCanLogin(name: name, pass: pass)
                         } label: {
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(.white)
