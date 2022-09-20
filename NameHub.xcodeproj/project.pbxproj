@@ -51,7 +51,7 @@
 		41DB4E0328D61CA300F378B9 /* Name_Suggestor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Name_Suggestor.xcdatamodel; sourceTree = "<group>"; };
 		429BF5F628D37A000085E7F4 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		429BF5F928D37A080085E7F4 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
-		D225ED2228C8E4B100A05D11 /* Name Suggestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Name Suggestor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D225ED2228C8E4B100A05D11 /* NameHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D225ED2528C8E4B100A05D11 /* Name_SuggestorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name_SuggestorApp.swift; sourceTree = "<group>"; };
 		D225ED2728C8E4B100A05D11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D225ED2928C8E4B300A05D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		D225ED2328C8E4B100A05D11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D225ED2228C8E4B100A05D11 /* Name Suggestor.app */,
+				D225ED2228C8E4B100A05D11 /* NameHub.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D225ED2128C8E4B100A05D11 /* Name Suggestor */ = {
+		D225ED2128C8E4B100A05D11 /* NameHub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D225ED3528C8E4B300A05D11 /* Build configuration list for PBXNativeTarget "Name Suggestor" */;
+			buildConfigurationList = D225ED3528C8E4B300A05D11 /* Build configuration list for PBXNativeTarget "NameHub" */;
 			buildPhases = (
 				D225ED1E28C8E4B100A05D11 /* Sources */,
 				D225ED1F28C8E4B100A05D11 /* Frameworks */,
@@ -231,9 +231,9 @@
 			);
 			dependencies = (
 			);
-			name = "Name Suggestor";
+			name = NameHub;
 			productName = "Name Suggestor";
-			productReference = D225ED2228C8E4B100A05D11 /* Name Suggestor.app */;
+			productReference = D225ED2228C8E4B100A05D11 /* NameHub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D225ED1D28C8E4B100A05D11 /* Build configuration list for PBXProject "Name Suggestor" */;
+			buildConfigurationList = D225ED1D28C8E4B100A05D11 /* Build configuration list for PBXProject "NameHub" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -264,7 +264,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D225ED2128C8E4B100A05D11 /* Name Suggestor */,
+				D225ED2128C8E4B100A05D11 /* NameHub */,
 			);
 		};
 /* End PBXProject section */
@@ -498,7 +498,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D225ED1D28C8E4B100A05D11 /* Build configuration list for PBXProject "Name Suggestor" */ = {
+		D225ED1D28C8E4B100A05D11 /* Build configuration list for PBXProject "NameHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D225ED3328C8E4B300A05D11 /* Debug */,
@@ -507,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D225ED3528C8E4B300A05D11 /* Build configuration list for PBXNativeTarget "Name Suggestor" */ = {
+		D225ED3528C8E4B300A05D11 /* Build configuration list for PBXNativeTarget "NameHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D225ED3628C8E4B300A05D11 /* Debug */,
