@@ -29,7 +29,7 @@ struct NameDiscoverView: View {
                 //re new button
                 Button {
                     for i in 0...9 {
-                        let randomInt = Int.random(in: 0...39)
+                        let randomInt = Int.random(in: 0...(content.count - 1))
                         randomNumber[i] = randomInt
                     }
                 }

@@ -8,6 +8,19 @@
 import SwiftUI
 
 struct NameTypeLayout: View {
+    let listNames : [NameModel] = names
+    func filterNamesByTag(array: [NameModel], tag: String) -> [NameModel] {
+        var filteredNames : [NameModel] = []
+        // logic filtered:
+        for name in array {
+            if name.tags[0] == tag {
+                filteredNames.append(name)
+            }
+        }
+        // return array of filtered names
+        return filteredNames
+    }
+    
     //sample models
     let models = [NameType(t: "Character Name", i: "CharacterIcon", b: "CharacterTab", d: "fantasy names like Renly, Brom or scifi names such as Chararbon Molfeli..."),
                   NameType(t: "Team Name", i: "TeamIcon", b: "TeamTab", d: "you might like Office Heroes or Desk Champions..."),
