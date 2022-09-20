@@ -21,10 +21,6 @@ struct NameDiscoverView: View {
                         number in
                         NameBox(content: content[number])
                     }
-//                    ForEach(content) {
-//                        name in
-//                        NameBox(content: name)
-//                    }
                 }
                 Spacer()
                 //re new button

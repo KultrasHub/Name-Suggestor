@@ -14,15 +14,13 @@ struct SavedNameBox: View {
     @EnvironmentObject var savedEnv:SavedEnvironment
     var body: some View {
         HStack(spacing:15){
+            Text(String(id))
             //name
             TextField("edit the name", text: $currentText)
                 .foregroundColor(.white)
                 .font(.system(size: 20).weight(.light))
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
-//                Text(content)
-//                    .foregroundColor(.white)
-//                    .font(.system(size: 20).weight(.light))
 
             Spacer()
             //edit button

@@ -33,7 +33,6 @@ struct SignInView: View {
                         }
                         Spacer()
                         Button {
-                            //env.lastVisited = .signIn
                             env.currentViewStage = .signUp
                         }
                         label: {
@@ -55,11 +54,6 @@ struct SignInView: View {
                 }
                 .padding([.leading,.trailing])
                 Spacer()
-//                if(env.currentUser != nil)
-//                {
-//                    Text("check if thing has been done: ")
-//                    Text(env.currentUser.unsafelyUnwrapped.username!)
-//                }
                 RoundedRectangle(cornerRadius: 40)
                     .fill(MyColor.header)
                     .frame(height: MySize.height * 0.7)
@@ -90,10 +84,6 @@ struct SignInView: View {
                 Alert(title: alertItem.title,
                       message: alertItem.message,
                       dismissButton: .default(alertItem.buttonTitle, action: {
-//                    if(controller.loginState)
-//                    {
-//                        env.currentViewStage = .discover
-//                    }
                     //TODO: NPNAM: xu ly khi login thanh cong
                 }))
             }

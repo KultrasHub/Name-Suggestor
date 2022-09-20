@@ -36,6 +36,7 @@ struct SavedFile: View {
                 else {return}
                 //content is filter based on nameData with tag Data
                 savedEnv.content = nameData
+                savedEnv.size = nameData.count
                 savedEnv.tags = tagData
                 //on starting get filter data based on character
                 savedEnv.updateCurrentSelectedTag(index: 0)

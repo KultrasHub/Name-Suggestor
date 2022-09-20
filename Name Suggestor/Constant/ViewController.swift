@@ -12,7 +12,6 @@ class GlobalEnvironment: ObservableObject{
     @Published var currentViewStage:ViewPage = .welcome
     @Published var lastVisited : ViewPage = .welcome
     @Published var tagSelected: Int = 0
-    //@Published var currentUser: UserInfo? = nil
     @Published var userName:String = ""
     init()
     {
@@ -25,13 +24,14 @@ class SavedEnvironment: ObservableObject{
     @Published var currentSelected:Int = 0
     @Published var content:[String] = []
     @Published var tags:[String] = []
-    //
     @Published var filterList:[Int] = []
+    @Published var size = 0
     init()
     {}
     init(arr:[String])
     {
         content = arr
+        size = content.count
     }
     //filter content that match the selected tag
     func updateCurrentSelectedTag(index: Int) {
@@ -62,12 +62,30 @@ class SavedEnvironment: ObservableObject{
     //remove at index
     func removeNameAtIndex(index: Int)
     {
+        //
+        if(index >= content.count)
+        {
+            updateCurrentSelectedTag(index: currentSelected)
+            return
+        }
         content.remove(at: index)
         tags.remove(at: index)
-        if let removeIndex = filterList.firstIndex(of: index)
+        //updateCurrentSelectedTag(index: currentSelected)
+        if(filterList.count == 1)
         {
-            filterList.remove(at: removeIndex)
+            filterList.removeAll()
+            return
         }
+        
+        for i in 0...filterList.count-2
+        {
+            if(filterList[i] >= index)
+            {
+                filterList[i] = filterList[i+1]
+            }
+        }
+
+        filterList.removeLast()
         UserDefaults.standard.set(content, forKey: nameKey)
         UserDefaults.standard.set(tags,forKey: tagKey)
     }

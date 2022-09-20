@@ -24,8 +24,6 @@ struct SignUpView: View {
                         //upper content
                         HStack{
                             Button {
-                                //let temp = env.lastVisited
-                                //env.lastVisited = env.currentViewStage
                                 env.currentViewStage = .welcome
                             }
                             label: {
@@ -37,7 +35,6 @@ struct SignUpView: View {
                             }
                             Spacer()
                             Button {
-                                //env.lastVisited = .signUp
                                 env.currentViewStage = .signIn
                             }
                             label: {

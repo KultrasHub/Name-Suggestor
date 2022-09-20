@@ -3,7 +3,7 @@
 //  Name Suggestor
 //
 //  Created by Khoa on 10/09/2022.
-//
+//  Modified by Long on 11/09/2022
 
 import SwiftUI
 
@@ -60,23 +60,6 @@ struct NameBox: View {
                     userDefaults.set(savedNames,forKey: nameKey)
                     userDefaults.set(savedTags,forKey: tagKey)
                     savedCheck = true
-//                    if let unsortData = userDefaults.stringArray(forKey: nameKey) {
-//                        // set unsort data to savedNames list
-//                        savedNames = unsortData
-//                        //marked as saved
-//                        savedCheck = true
-//                        // check if name already exist in list
-//                        if !savedNames.contains(content.name) {
-//                            savedNames.append(content.name)
-//                            // save tags that goes with name
-//                            if let unsortData = userDefaults.stringArray(forKey: tagKey) {
-//                                savedTags = unsortData
-//                                savedTags.append(content.tags[0])
-//                                //marked as saved
-//                                //savedCheck = true
-//                            }
-//                        }
-//                    }
                 }
             }
             label: {
