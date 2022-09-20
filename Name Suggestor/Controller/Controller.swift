@@ -79,26 +79,36 @@ final class Controller: ObservableObject {
         return true
     }
     
-    func checkUserCanLogin(name: String, pass: String) -> Bool{
+    func checkUserCanLogin(name: String, pass: String,env: GlobalEnvironment){
         if name == "" {
             alertItem = AlertContext.userNameMissing
             loginState = false
-            return false
+            return
         }
         
         if pass == "" {
             alertItem = AlertContext.passwordMissing
             loginState = false
-            return false
+            return
         }
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "UserInfo")
         do {
             let listU = try container.viewContext.fetch(fetchRequest) as? [UserInfo]
-            if listU?.contains(where: {$0.username == name && $0.password == pass }) == true {
-                alertItem = AlertContext.loginSuccess
-                loginState = true
-                return true
+            if let userList = listU
+            {
+                for u in userList{
+                    //compare user name and password
+                    if(u.username == name && u.password == pass){
+                        //this is the matched user
+                        alertItem = AlertContext.loginSuccess
+                        loginState = true
+                        if let name = u.username{
+                            env.userName = name
+                            env.currentViewStage = .discover
+                        }
+                    }
+                }
             }
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
@@ -106,7 +116,7 @@ final class Controller: ObservableObject {
         
         alertItem = AlertContext.loginFail
         loginState = false
-        return false
+        return
     }
     
     func isValidEmail(email: String) -> Bool {

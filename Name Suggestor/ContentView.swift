@@ -34,7 +34,7 @@ struct ContentView: View {
         }
         else if(env.currentViewStage == .nameDiscover)
         {
-            NameDiscoverView(content: names)
+            NameDiscoverView(content: filterNamesByTag(array: names, tag: nameTagSample[env.tagSelected]))
                 .environmentObject(env)
         }
         else if (env.currentViewStage == .saved)

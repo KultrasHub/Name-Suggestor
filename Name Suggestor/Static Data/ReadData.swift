@@ -8,7 +8,19 @@
 import Foundation
 
 var names = decodeJsonFromJsonFile(jsonFileName: "Name.json")
+let listNames : [NameModel] = names
 
+func filterNamesByTag(array: [NameModel], tag: String) -> [NameModel] {
+    var filteredNames : [NameModel] = []
+    // logic filtered:
+    for name in array {
+        if name.tags[0] == tag {
+            filteredNames.append(name)
+        }
+    }
+    // return array of filtered names
+    return filteredNames
+}
 func decodeJsonFromJsonFile(jsonFileName: String) -> [NameModel] {
     if let file = Bundle.main.url(forResource: jsonFileName, withExtension: nil) {
         if let data = try? Data(contentsOf: file) {

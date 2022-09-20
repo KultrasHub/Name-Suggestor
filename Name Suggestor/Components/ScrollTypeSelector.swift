@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ScrollTypeSelector: View {
-    let nameList = ["Character","Team","Gaming","Weapon","Pet"]
-    @Binding var currentSelected : Int
+    let nameList = ["Character","Team","Real","Weapon","Pet"]
+    @EnvironmentObject var savedEnv : SavedEnvironment
     var body: some View {
         ScrollView(.horizontal,showsIndicators: false){
             HStack{
                 ForEach(nameList.indices,id:\.self){
                     index in
-                    NameTypeButton(content: nameList[index], id: index, currentSelected: $currentSelected)
+                    NameTypeButton(content: nameList[index], id: index)
                 }
             }
         }
@@ -26,7 +26,7 @@ struct ScrollTypeSelector_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
             Background()
-            ScrollTypeSelector(currentSelected: .constant(0))
+            ScrollTypeSelector().environmentObject(SavedEnvironment())
         }
     }
 }

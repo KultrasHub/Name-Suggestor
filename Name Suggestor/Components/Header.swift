@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Header: View {
     @State var tabState:Bool
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
         Rectangle()
             .fill(MyColor.header)
@@ -29,7 +30,7 @@ struct Header: View {
                             .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .degrees(360), endAngle: .zero),lineWidth: 3)
                             .frame(width: MySize.headerHeight * 0.3,height: MySize.headerHeight*0.3)
                     }
-                    Text("Beereel")
+                        Text(env.userName)
                             .foregroundColor(.white)
                             .font(.system(size: 20).weight(.semibold))
                         Spacer()
@@ -73,9 +74,12 @@ struct DiscoverHeader: View{
                                 .foregroundColor(.white)
                         }
                         Spacer()
-                        Text("Beereel")
-                            .foregroundColor(.white)
-                            .font(.system(size: 20).weight(.semibold))
+//                        Text((env.currentUser != nil) ? env.currentUser.unsafelyUnwrapped.username! : "Missing")
+//                            .foregroundColor(.white)
+//                            .font(.system(size: 20).weight(.semibold))
+                        Text(env.userName)
+                                                    .foregroundColor(.white)
+                                                    .font(.system(size: 20).weight(.semibold))
                         ZStack {
                             Image("Beereel")
                                 .resizable()
@@ -109,7 +113,7 @@ struct Header_Previews: PreviewProvider {
         ZStack {
             Background()
             VStack {
-                Header(tabState: true)
+                Header(tabState: true).environmentObject(GlobalEnvironment())
                 DiscoverHeader().environmentObject(GlobalEnvironment())
             }
         }

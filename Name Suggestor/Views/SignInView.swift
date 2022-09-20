@@ -13,7 +13,6 @@ struct SignInView: View {
     @State private var pass = ""
     
     @ObservedObject private var controller = Controller()
-    
     @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
         ZStack {
@@ -42,6 +41,7 @@ struct SignInView: View {
                                 .foregroundColor(MyColor.option_1.opacity(0.9))
                         }
                     }
+                    
                     //title
                     Text("Sign In".uppercased())
                         .foregroundColor(.white)
@@ -55,6 +55,11 @@ struct SignInView: View {
                 }
                 .padding([.leading,.trailing])
                 Spacer()
+//                if(env.currentUser != nil)
+//                {
+//                    Text("check if thing has been done: ")
+//                    Text(env.currentUser.unsafelyUnwrapped.username!)
+//                }
                 RoundedRectangle(cornerRadius: 40)
                     .fill(MyColor.header)
                     .frame(height: MySize.height * 0.7)
@@ -65,7 +70,7 @@ struct SignInView: View {
                         PasswordBox(title: "Password", iconName: "lock.circle", userEmail: $pass)
                         Spacer()
                         Button {
-                            controller.checkUserCanLogin(name: name, pass: pass)
+                            controller.checkUserCanLogin(name: name, pass: pass,env: env)
                         } label: {
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(.white)
@@ -85,10 +90,10 @@ struct SignInView: View {
                 Alert(title: alertItem.title,
                       message: alertItem.message,
                       dismissButton: .default(alertItem.buttonTitle, action: {
-                    if(controller.loginState)
-                    {
-                        env.currentViewStage = .discover
-                    }
+//                    if(controller.loginState)
+//                    {
+//                        env.currentViewStage = .discover
+//                    }
                     //TODO: NPNAM: xu ly khi login thanh cong
                 }))
             }

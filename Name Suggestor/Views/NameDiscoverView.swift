@@ -10,6 +10,7 @@ import SwiftUI
 struct NameDiscoverView: View {
     let content : [NameModel]
     @State var randomNumber : [Int] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
         ZStack {
             Background()
@@ -54,7 +55,7 @@ struct NameDiscoverView: View {
 
 struct NameDiscoverView_Previews: PreviewProvider {
     static var previews: some View {
-        NameDiscoverView(content: names)
+        NameDiscoverView(content: filterNamesByTag(array: names, tag: "Gaming"))
             .environmentObject(GlobalEnvironment())
     }
 }

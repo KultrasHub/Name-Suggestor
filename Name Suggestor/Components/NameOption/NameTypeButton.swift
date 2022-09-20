@@ -10,23 +10,23 @@ import SwiftUI
 struct NameTypeButton: View {
     let content:String
     let id:Int
-    @Binding var currentSelected:Int
+    @EnvironmentObject var savedEnv :SavedEnvironment
     var body: some View {
         Button{
             //update current selected
-            if(currentSelected != id)
+            if(savedEnv.currentSelected != id)
             {
-                currentSelected = id
+                savedEnv.updateCurrentSelectedTag(index: id)
             }
         }
         label:{
             RoundedRectangle(cornerRadius: 30)
-                .fill((currentSelected == id) ? MyColor.header : Color.clear)
+                .fill((savedEnv.currentSelected == id) ? MyColor.header : Color.clear)
                 .frame(width: MySize.width * 0.4, height: MySize.height * 0.05, alignment: .center)
                 .overlay(
                 Text(content)
                     .font(.system(size: 20).weight(.bold))
-                    .foregroundColor((currentSelected == id) ? .white : .white.opacity(0.4))
+                    .foregroundColor((savedEnv.currentSelected == id) ? .white : .white.opacity(0.4))
             )
         }
         
@@ -37,7 +37,8 @@ struct NameTypeButton_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
             Background()
-            NameTypeButton(content: "Character",id: 0,currentSelected:.constant(1))
+            NameTypeButton(content: "Character",id: 0)
+                .environmentObject(SavedEnvironment())
         }
     }
 }

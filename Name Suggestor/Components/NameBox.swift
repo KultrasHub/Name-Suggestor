@@ -12,7 +12,7 @@ struct NameBox: View {
     var content: NameModel
     @State var savedNames : [String] = []
     @State var savedTags : [String] = []
-    
+    @State var savedCheck : Bool = false
     var body: some View {
         HStack {
             //name
@@ -25,35 +25,66 @@ struct NameBox: View {
                     .font(.system(size: 14).weight(.thin))
             }
             Spacer()
+            //add a text saved if an element is saved
+            if(savedCheck)
+            {
+                Text("SAVED")
+                    .font(.system(size: 16).weight(.thin))
+                    .foregroundColor(.red.opacity(0.8))
+            }
             //save button
             Button {
-                // get data from userDefaults
-                if let unsortData = userDefaults.stringArray(forKey: "savedNames") {
-                    // set unsort data to savedNames list
-                    savedNames = unsortData
-                    // check if name already exist in list
-                    if !savedNames.contains(content.name) {
+                if(!savedCheck)
+                {
+                    // get data from userDefaults
+                    guard
+                        let nameData = userDefaults.stringArray(forKey: nameKey) ,
+                        let tagData = userDefaults.stringArray(forKey: tagKey)
+                    else{
+                        //nothing in name or tag
                         savedNames.append(content.name)
-                        // save tags that goes with name
-                        if let unsortData = userDefaults.stringArray(forKey: "savedTags") {
-                            savedTags = unsortData
-                            savedTags.append(content.tags[0])
-                        }
+                        savedTags.append(content.tags[0])
+                        //save to user default
+                        userDefaults.set(savedNames,forKey: nameKey)
+                        userDefaults.set(savedTags,forKey: tagKey)
+                        savedCheck = true
+                        return
                     }
+                    //else
+                    savedNames = nameData
+                    savedTags = tagData
+                    //assign value first
+                    savedNames.append(content.name)
+                    savedTags.append(content.tags[0])
+                    //save to user default
+                    userDefaults.set(savedNames,forKey: nameKey)
+                    userDefaults.set(savedTags,forKey: tagKey)
+                    savedCheck = true
+//                    if let unsortData = userDefaults.stringArray(forKey: nameKey) {
+//                        // set unsort data to savedNames list
+//                        savedNames = unsortData
+//                        //marked as saved
+//                        savedCheck = true
+//                        // check if name already exist in list
+//                        if !savedNames.contains(content.name) {
+//                            savedNames.append(content.name)
+//                            // save tags that goes with name
+//                            if let unsortData = userDefaults.stringArray(forKey: tagKey) {
+//                                savedTags = unsortData
+//                                savedTags.append(content.tags[0])
+//                                //marked as saved
+//                                //savedCheck = true
+//                            }
+//                        }
+//                    }
                 }
-
-//                savedNames.append(content.name)
-//                savedTags.append(content.tags[0])
-//                userDefaults.set(savedNames, forKey: "savedNames")
-//                userDefaults.set(savedTags, forKey: "savedTags")
-                
             }
             label: {
                 Image(systemName: "heart.circle.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height:30)
-                    .foregroundColor(.white.opacity(0.2))
+                    .foregroundColor((savedCheck) ? .red : .white.opacity(0.2))
             }
         }
         .padding([.leading,.trailing],20)
