@@ -3,7 +3,7 @@
   Course: COSC2659 iOS Development
   Semester: 2022B
   Assessment: Assignment 3
-  Author: Tran Nguyen Anh Khoa
+  Author: Tran Nguyen Anh Khoa, Nguyen Trong Minh Long
   ID: s3863956
   Created  date: 09/09/2022
   Last modified: 14/09/2022
@@ -30,6 +30,7 @@ struct NameDiscoverView: View {
                 Spacer()
                 //re new button
                 Button {
+                    // Random function
                     for i in 0...9 {
                         let randomInt = Int.random(in: 0...(content.count - 1))
                         randomNumber[i] = randomInt
