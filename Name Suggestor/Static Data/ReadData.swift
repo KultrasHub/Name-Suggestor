@@ -1,9 +1,15 @@
-//
-//  ReadData.swift
-//  Name Suggestor
-//
-//  Created by Long Nguyen on 15/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Tran Nguyen Anh Khoa, Nguyen Trong Minh Long
+  ID: s3863956, s3878694
+  Created  date: 15/09/2022
+  Last modified: 20/09/2022
+  Acknowledgement: Personal coding
+*/
+
 
 import Foundation
 

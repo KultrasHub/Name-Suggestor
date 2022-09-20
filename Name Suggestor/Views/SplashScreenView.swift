@@ -1,9 +1,14 @@
-//
-//  SplashScreenView.swift
-//  NameHub
-//
-//  Created by Khanh Giang Nhat on 20/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Giang Nhat Khanh
+  ID: s3878182
+  Created  date: 11/09/2022
+  Last modified: 14/09/2022
+  Acknowledgement: Personal coding
+*/
 
 import SwiftUI
 

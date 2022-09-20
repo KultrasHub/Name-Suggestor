@@ -1,9 +1,13 @@
-//
-//  Alert.swift
-//  Name Suggestor
-//
-//  Created by NPNAM on 13/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Nguyen Phan Nam
+  ID: s3873792
+  Created  date: 15/09/2022
+  Acknowledgement: Personal coding
+*/
 
 import SwiftUI
 

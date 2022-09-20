@@ -1,10 +1,13 @@
-//
-//  NameModel.swift
-//  Name Suggestor
-//
-//  Created by Khoa on 10/09/2022.
-//
-
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Tran Nguyen Anh Khoa
+  ID: s3863956
+  Created  date: 10/09/2022
+  Acknowledgement: Personal coding
+*/
 import Foundation
 struct NameModel: Identifiable, Codable {
     let id: Int

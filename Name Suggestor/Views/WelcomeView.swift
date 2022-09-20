@@ -1,9 +1,14 @@
-//
-//  WelcomeView.swift
-//  Name Suggestor
-//
-//  Created by Khoa on 11/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Tran Nguyen Anh Khoa
+  ID: s3863956
+  Created  date: 11/09/2022
+  Last modified: 14/09/2022
+  Acknowledgement: Personal coding
+*/
 
 import SwiftUI
 

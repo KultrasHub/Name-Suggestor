@@ -1,9 +1,14 @@
-//
-//  SavedNameBox.swift
-//  Name Suggestor
-//
-//  Created by Khoa on 19/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Tran Nguyen Anh Khoa, Nguyen Phan Nam
+  ID: s3863956,  s3873792
+  Created  date: 19/09/2022
+  Last modified: 20/09/2022
+  Acknowledgement: Personal coding
+*/
 
 import SwiftUI
 enum DeleteState {case none,asking,delete}
