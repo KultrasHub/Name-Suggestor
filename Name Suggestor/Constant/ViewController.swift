@@ -40,6 +40,10 @@ class SavedEnvironment: ObservableObject{
         let selectedTag = nameTagSample[currentSelected + 1]//name tag has empty zero at start while current selected has not
         //reset the filter list
         filterList.removeAll()
+        if(tags.count == 0)
+        {
+            return
+        }
         for i in 0...tags.count-1{
             if(tags[i] == selectedTag)
             {

@@ -16,8 +16,7 @@ struct Name_SuggestorApp: App {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             
-            SignUpView()
-                .environment(\.colorScheme, .light)
+            ContentView()
         }
     }
 }
