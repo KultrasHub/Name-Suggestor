@@ -47,22 +47,22 @@
     {
         "id": 9,
         "name": "Mushballs",
-        "tags": ["Gaming", "Username", "In-game name"]
+        "tags": ["Weapon Name", "Username", "In-game name"]
     },
     {
         "id": 10,
         "name": "Galaxy Destroyer",
-        "tags": ["Gaming", "Villian", "Weapons"]
+        "tags": ["Weapon Name", "Villian", "Weapons"]
     },
     {
         "id": 11,
         "name": "Buzz buzz",
-        "tags": ["Gaming", "Company startup", "Username", "Business"]
+        "tags": ["Weapon Name", "Company startup", "Username", "Business"]
     },
     {
         "id": 12,
         "name": "Papaya",
-        "tags": ["Username", "Company startup", "Business"]
+        "tags": ["Fantasy", "Company startup", "Business"]
     },
     {
         "id": 13,
@@ -72,32 +72,32 @@
     {
         "id": 14,
         "name": "Invader Slayer",
-        "tags": ["Username", "Gaming", "User"]
+        "tags": ["Fantasy", "Weapon Name", "User"]
     },
     {
         "id": 15,
         "name": "Pusham",
-        "tags": ["Gaming", "Username"]
+        "tags": ["Fantasy", "Weapon Name"]
     },
     {
         "id": 16,
         "name": "Ras-Putin",
-        "tags": ["Username", "In-game character", "Gaming"]
+        "tags": ["Fantasy", "In-game character", "Weapon Name"]
     },
     {
         "id": 17,
         "name": "Micro-Powerrrr",
-        "tags": ["Username", "Gaming", "Red"]
+        "tags": ["Fantasy", "Weapon Name", "Red"]
     },
     {
         "id": 18,
         "name": "Lasta Vista",
-        "tags": ["Gaming", "City", "In-game"]
+        "tags": ["Weapon Name", "City", "In-game"]
     },
     {
         "id": 19,
         "name": "Hunter Gunther",
-        "tags": ["Username", "Gaming", "Creative"]
+        "tags": ["Fantasy", "Weapon Name", "Creative"]
     },
     {
         "id": 20,
@@ -182,7 +182,7 @@
     {
         "id": 36,
         "name": "Noobmaster69",
-        "tags": ["Gaming", "Username"]
+        "tags": ["Weapon Name", "Username"]
     },
     {
         "id": 37,
@@ -212,7 +212,7 @@
     {
         "id": 42,
         "name": "Dasoner",
-        "tags": ["Real Name", "Character Name", "Creative", "Gaming"]
+        "tags": ["Real Name", "Character Name", "Creative", "Weapon Name"]
     },
     {
         "id": 43,
@@ -267,27 +267,27 @@
     {
         "id": 53,
         "name": "Galactus",
-        "tags": ["Username", "Gaming", "Movie"]
+        "tags": ["Fantasy", "Weapon Name", "Movie"]
     },
     {
         "id": 54,
         "name": "Marvel",
-        "tags": ["Username", "Gaming", "Movie"]
+        "tags": ["Fantasy", "Weapon Name", "Movie"]
     },
     {
         "id": 55,
         "name": "Morningstar",
-        "tags": ["Fantasy", "Gaming", "Username"]
+        "tags": ["Fantasy", "Weapon Name", "Username"]
     },
     {
         "id": 56,
         "name": "For-bitten",
-        "tags": ["Gaming", "Username", "Creative"]
+        "tags": ["Weapon Name", "Username", "Creative"]
     },
     {
         "id": 57,
         "name": "Haya",
-        "tags": ["Username", "Creative", "Funny"]
+        "tags": ["Fantasy", "Creative", "Funny"]
     },
     {
         "id": 58,
@@ -297,17 +297,17 @@
     {
         "id": 59,
         "name": "Bossy09",
-        "tags": ["Username", "Gaming"]
+        "tags": ["Fantasy", "Weapon Name"]
     },
     {
         "id": 60,
         "name": "SussyBaka",
-        "tags": ["Username", "Funny", "Creative"]
+        "tags": ["Fantasy", "Funny", "Creative"]
     },
     {
         "id": 61,
         "name": "Gigachad",
-        "tags": ["Username", "Meme", "Funny"]
+        "tags": ["Fantasy", "Meme", "Funny"]
     },
     {
         "id": 62,
@@ -322,12 +322,12 @@
     {
         "id": 64,
         "name": "Chicks",
-        "tags": ["Username", "Gaming"]
+        "tags": ["Fantasy", "Weapon Name"]
     },
     {
         "id": 65,
         "name": "Lmaoofi",
-        "tags": ["Username", "Meme", "Funny"]
+        "tags": ["Fantasy", "Meme", "Funny"]
     },
     {
         "id": 66,
@@ -337,17 +337,17 @@
     {
         "id": 67,
         "name": "Corrupted Gem",
-        "tags": ["Gaming", "Username"]
+        "tags": ["Weapon Name", "Username"]
     },
     {
         "id": 68,
         "name": "Foruui Git",
-        "tags": ["Username", "Creative"]
+        "tags": ["Fantasy", "Creative"]
     },
     {
         "id": 69,
         "name": "Sumer 42",
-        "tags": ["Username", "Funny", "Meme"]
+        "tags": ["Fantasy", "Funny", "Meme"]
     },
     {
         "id": 70,
@@ -362,17 +362,17 @@
     {
         "id": 72,
         "name": "Longevitier",
-        "tags": ["Username", "Gaming", "Fantasy"]
+        "tags": ["Fantasy", "Weapon Name", "Fantasy"]
     },
     {
         "id": 73,
         "name": "Enhancer Micher-force",
-        "tags": ["Fantasy", "Gaming", "Username"]
+        "tags": ["Fantasy", "Weapon Name", "Username"]
     },
     {
         "id": 74,
         "name": "Morbius",
-        "tags": ["Gaming", "Username", "Fantasy"]
+        "tags": ["Weapon Name", "Username", "Fantasy"]
     },
     {
         "id": 75,
@@ -382,26 +382,222 @@
     {
         "id": 76,
         "name": "Marco-Mind",
-        "tags": ["Username", "Gaming", "Creative", "Business"]
+        "tags": ["Fantasy", "Weapon Name", "Creative", "Business"]
     },
     {
         "id": 77,
         "name": "Miss Conception",
-        "tags": ["Username", "Fantasy", "Creative"]
+        "tags": ["Fantasy", "Fantasy", "Creative"]
     },
     {
         "id": 78,
         "name": "Kiss-my-axe",
-        "tags": ["Gaming", "Creative", "Fantasy"]
+        "tags": ["Weapon Name", "Creative", "Fantasy"]
     },
     {
         "id": 79,
         "name": "Cenna",
         "tags": ["Real Name", "Famous People"]
+    },
+    {
+        "id": 80,
+        "name": "Doggo",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 81,
+        "name": "Catto",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 82,
+        "name": "Boner",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 83,
+        "name": "Fluffy",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 84,
+        "name": "Cloudy",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 85,
+        "name": "Biter",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 86,
+        "name": "Wolfy",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 87,
+        "name": "Kitty",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 88,
+        "name": "Meower",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 89,
+        "name": "Hairball",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 90,
+        "name": "Floof",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 91,
+        "name": "Cutie",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 92,
+        "name": "Precious",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 93,
+        "name": "Rider",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 94,
+        "name": "Golden",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 95,
+        "name": "Fido",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 96,
+        "name": "Spike",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 97,
+        "name": "Jerry",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 98,
+        "name": "tom",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 99,
+        "name": "loki",
+        "tags": ["Pet Name", "Username"]
+    },
+    {
+        "id": 100,
+        "name": "Lusty Nany",
+        "tags": ["Business", "Creative", "Username"]
+    },
+    {
+        "id": 101,
+        "name": "Spider-man",
+        "tags": ["Business", "Web designer", "Creative"]
+    },
+    {
+        "id": 102,
+        "name": "Intern-ship",
+        "tags": ["Business", "Testing for ship", "Creative"]
+    },
+    {
+        "id": 103,
+        "name": "Mama-juice",
+        "tags": ["Business", "Milk Company", "Funny"]
+    },
+    {
+        "id": 104,
+        "name": "Suss-shoot",
+        "tags": ["Weapon Name", "Username"]
+    },
+    {
+        "id": 105,
+        "name": "Diano",
+        "tags": ["Real Name", "Username", "Fantasy"]
+    },
+    {
+        "id": 106,
+        "name": "Eric",
+        "tags": ["Real Name", "Username"]
+    },
+    {
+        "id": 107,
+        "name": "Finerish",
+        "tags": ["Pet Name"]
+    },
+    {
+        "id": 108,
+        "name": "Cocoa-nut",
+        "tags": ["Business", "Creative", "Puns"]
+    },
+    {
+        "id": 109,
+        "name": "Fetch",
+        "tags": ["Business", "Web API"]
+    },
+    {
+        "id": 110,
+        "name": "Light-ink",
+        "tags": ["Business", "Colors"]
+    },
+    {
+        "id": 111,
+        "name": "Fish-hooks",
+        "tags": ["Business", "Creative"]
+    },
+    {
+        "id": 112,
+        "name": "Camel Cam",
+        "tags": ["Business", "Camera shop"]
+    },
+    {
+        "id": 113,
+        "name": "Flash",
+        "tags": ["Business", "Gaming", "Delivery"]
+    },
+    {
+        "id": 114,
+        "name": "Magneto",
+        "tags": ["Fantasy", "Business"]
+    },
+    {
+        "id": 115,
+        "name": "Facter Fetch",
+        "tags": ["Fantasy"]
+    },
+    {
+        "id": 116,
+        "name": "Filmy",
+        "tags": ["Business", "Gaming"]
+    },
+    {
+        "id": 117,
+        "name": "Linkin-Relation",
+        "tags": ["Business", "Database"]
+    },
+    {
+        "id": 118,
+        "name": "Kingdom of Doom",
+        "tags": ["Weapon Name", "Fantasy", "Gaming"]
+    },
+    {
+        "id": 119,
+        "name": "Firl fine",
+        "tags": ["Fantasy", "Gaming"]
     }
-
-
-
-
 ]
 
