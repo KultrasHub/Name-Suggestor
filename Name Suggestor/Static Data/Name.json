@@ -72,7 +72,7 @@
     {
         "id": 14,
         "name": "Invader Slayer",
-        "tags": ["Weapon", "Gaming", "User"]
+        "tags": ["Username", "Gaming", "User"]
     },
     {
         "id": 15,
@@ -198,7 +198,210 @@
         "id": 39,
         "name": "Amazoff",
         "tags": ["Business", "Username"]
+    },
+    {
+        "id": 40,
+        "name": "John",
+        "tags": ["Real Name", "People", "Username"]
+    },
+    {
+        "id": 41,
+        "name": "Samatha",
+        "tags": ["Real Name", "People", "Username"]
+    },
+    {
+        "id": 42,
+        "name": "Dasoner",
+        "tags": ["Real Name", "Character Name", "Creative", "Gaming"]
+    },
+    {
+        "id": 43,
+        "name": "Selina",
+        "tags": ["Real Name", "Character Name", "Original"]
+    },
+    {
+        "id": 44,
+        "name": "Loria",
+        "tags": ["Real Name", "People", "Creative"]
+    },
+    {
+        "id": 45,
+        "name": "Larry",
+        "tags": ["Real Name", "People"]
+    },
+    {
+        "id": 46,
+        "name": "Cherry",
+        "tags": ["Real Name", "Cute"]
+    },
+    {
+        "id": 47,
+        "name": "Charlie",
+        "tags": ["Real Name", "Famous"]
+    },
+    {
+        "id": 48,
+        "name": "Porrios",
+        "tags": ["Real Name", "Creative", "Fantasy"]
+    },
+    {
+        "id": 49,
+        "name": "Liz",
+        "tags": ["Real Name", "Cute", "Character"]
+    },
+    {
+        "id": 50,
+        "name": "Suzzy",
+        "tags": ["Real Name", "Cute"]
+    },
+    {
+        "id": 51,
+        "name": "Kayden",
+        "tags": ["Real Name", "Boring", "Creative"]
+    },
+    {
+        "id": 52,
+        "name": "Sulliven",
+        "tags": ["Real Name", "Famous", "Sport"]
+    },
+    {
+        "id": 53,
+        "name": "Galactus",
+        "tags": ["Username", "Gaming", "Movie"]
+    },
+    {
+        "id": 54,
+        "name": "Marvel",
+        "tags": ["Username", "Gaming", "Movie"]
+    },
+    {
+        "id": 55,
+        "name": "Morningstar",
+        "tags": ["Fantasy", "Gaming", "Username"]
+    },
+    {
+        "id": 56,
+        "name": "For-bitten",
+        "tags": ["Gaming", "Username", "Creative"]
+    },
+    {
+        "id": 57,
+        "name": "Haya",
+        "tags": ["Username", "Creative", "Funny"]
+    },
+    {
+        "id": 58,
+        "name": "Sarah",
+        "tags": ["Real Name", "Cute"]
+    },
+    {
+        "id": 59,
+        "name": "Bossy09",
+        "tags": ["Username", "Gaming"]
+    },
+    {
+        "id": 60,
+        "name": "SussyBaka",
+        "tags": ["Username", "Funny", "Creative"]
+    },
+    {
+        "id": 61,
+        "name": "Gigachad",
+        "tags": ["Username", "Meme", "Funny"]
+    },
+    {
+        "id": 62,
+        "name": "Barbara",
+        "tags": ["Real Name", "People", "Fantasy"]
+    },
+    {
+        "id": 63,
+        "name": "Conqueer",
+        "tags": ["Fantasy", "Character Name"]
+    },
+    {
+        "id": 64,
+        "name": "Chicks",
+        "tags": ["Username", "Gaming"]
+    },
+    {
+        "id": 65,
+        "name": "Lmaoofi",
+        "tags": ["Username", "Meme", "Funny"]
+    },
+    {
+        "id": 66,
+        "name": "Finallizery",
+        "tags": ["Fantasy", "Username", "Creative"]
+    },
+    {
+        "id": 67,
+        "name": "Corrupted Gem",
+        "tags": ["Gaming", "Username"]
+    },
+    {
+        "id": 68,
+        "name": "Foruui Git",
+        "tags": ["Username", "Creative"]
+    },
+    {
+        "id": 69,
+        "name": "Sumer 42",
+        "tags": ["Username", "Funny", "Meme"]
+    },
+    {
+        "id": 70,
+        "name": "Steven",
+        "tags": ["Real Name", "Username"]
+    },
+    {
+        "id": 71,
+        "name": "Porchester",
+        "tags": ["Business", "Creative", "Username"]
+    },
+    {
+        "id": 72,
+        "name": "Longevitier",
+        "tags": ["Username", "Gaming", "Fantasy"]
+    },
+    {
+        "id": 73,
+        "name": "Enhancer Micher-force",
+        "tags": ["Fantasy", "Gaming", "Username"]
+    },
+    {
+        "id": 74,
+        "name": "Morbius",
+        "tags": ["Gaming", "Username", "Fantasy"]
+    },
+    {
+        "id": 75,
+        "name": "Morali-demom",
+        "tags": ["Fantasy", "Username"]
+    },
+    {
+        "id": 76,
+        "name": "Marco-Mind",
+        "tags": ["Username", "Gaming", "Creative", "Business"]
+    },
+    {
+        "id": 77,
+        "name": "Miss Conception",
+        "tags": ["Username", "Fantasy", "Creative"]
+    },
+    {
+        "id": 78,
+        "name": "Kiss-my-axe",
+        "tags": ["Gaming", "Creative", "Fantasy"]
+    },
+    {
+        "id": 79,
+        "name": "Cenna",
+        "tags": ["Real Name", "Famous People"]
     }
+
+
+
 
 ]
 
