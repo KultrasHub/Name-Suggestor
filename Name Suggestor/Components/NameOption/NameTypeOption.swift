@@ -14,8 +14,6 @@ struct NameTypeOption: View {
     //content
     let type: NameType
     var body: some View {
-        Button {}
-        label: {
             Image(type.backgroundName)
                 .resizable()
                 //.frame(width: MySize.width * 0.9, height: MySize.height * 0.15)
@@ -49,7 +47,7 @@ struct NameTypeOption: View {
                     }
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-        }
+        
     }
 }
 
@@ -61,8 +59,6 @@ struct NameTypeOption2: View {
     let type: NameType
     
     var body: some View {
-        Button {}
-        label: {
             Image(type.backgroundName)
                 .resizable()
                 //.frame(width: MySize.width * 0.9, height: MySize.height * 0.15)
@@ -95,7 +91,7 @@ struct NameTypeOption2: View {
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 //.frame(width: MySize.width * 0.45, height: MySize.height * 0.2)
-        }
+        
     }
 }
 struct NameTypeOption_Previews: PreviewProvider {

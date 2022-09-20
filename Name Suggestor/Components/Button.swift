@@ -9,8 +9,16 @@ import SwiftUI
 
 struct MyButton: View {
     let content: String
+    let viewStage:ViewPage
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
-        Button {}
+        Button {
+            if(env.currentViewStage != viewStage)
+            {
+                env.currentViewStage = viewStage
+                env.lastVisited = .welcome
+            }
+        }
         label: {
             RoundedRectangle(cornerRadius: 40)
                 .fill(.white)
@@ -26,8 +34,16 @@ struct MyButton: View {
 
 struct MyBorderButton: View {
     let content: String
+    let viewStage:ViewPage
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
-        Button {}
+        Button {
+            if(env.currentViewStage != viewStage)
+            {
+                env.currentViewStage = viewStage
+                env.lastVisited = .welcome
+            }
+        }
         label: {
             RoundedRectangle(cornerRadius: 40)
                 .stroke(.white,lineWidth: 2)
@@ -46,8 +62,8 @@ struct Button_Previews: PreviewProvider {
         ZStack {
             Background()
             VStack {
-                MyButton(content: "Sign In")
-                MyBorderButton(content: "Sign Up")
+                MyButton(content: "Sign In", viewStage:.signIn )
+                MyBorderButton(content: "Sign Up", viewStage:.signUp)
             }
         }
     }

@@ -24,7 +24,7 @@ struct WelcomeView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width:70)
                         //app name
-                        Text("Name Suggestor")
+                        Text("NameHub")
                             .foregroundColor(.white)
                             .font(.system(size: 20).weight(.bold))
                         //intro quote
@@ -34,8 +34,8 @@ struct WelcomeView: View {
                             .frame(width:MySize.width * 0.7,alignment: .center)
                             .multilineTextAlignment(.center)
                         Spacer()
-                        MyButton(content: "Sign In")
-                        MyBorderButton(content: "Sign Up")
+                        MyButton(content: "Sign In", viewStage:.signIn)
+                        MyBorderButton(content: "Sign Up", viewStage: .signUp)
                         Spacer()
                     })
             }
@@ -46,6 +46,6 @@ struct WelcomeView: View {
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView()
+        WelcomeView().environmentObject(GlobalEnvironment())
     }
 }

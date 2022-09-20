@@ -8,50 +8,51 @@
 import SwiftUI
 
 struct Header: View {
-    @State var tabState: Bool
-    
+    @State var tabState:Bool
+    @EnvironmentObject var env:GlobalEnvironment
     var body: some View {
-        VStack {
-            Rectangle()
-                .fill(MyColor.header)
-                .frame(height: MySize.headerHeight)
-                .overlay(
-                    VStack(alignment:.center,spacing: 20) {
-                        Spacer()
-                        //profile
-                        HStack {
-                            ZStack {
-                                Image("Beereel")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .background(.white.opacity(0.2))
-                                    .clipShape(Circle())
-                                    .frame(width: MySize.headerHeight * 0.3)
-                                Circle()
-                                    .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .degrees(360), endAngle: .zero), lineWidth: 3)
-                                    .frame(width: MySize.headerHeight * 0.3, height: MySize.headerHeight * 0.3)
-                            }
-                            Text("Beereel")
-                                .foregroundColor(.white)
-                                .font(.system(size: 20).weight(.semibold))
-                            Spacer()
-                        }
-                        //tabs
-                        HStack {
-                            TabSelector(content: "discover", state: $tabState)
-                            Spacer()
-                            OppoTabSelector(content: "saved names", state: $tabState)
-                        }
+        Rectangle()
+            .fill(MyColor.header)
+            .frame(height: MySize.headerHeight)
+            .overlay(
+                VStack(alignment:.center,spacing: 20){
+                    Spacer()
+                    //profile
+                    HStack{
+                        ZStack{
+                        Image("Beereel")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .background(.white.opacity(0.2))
+                            .clipShape(Circle())
+                            .frame(width: MySize.headerHeight * 0.3)
+                        Circle()
+                            .stroke( AngularGradient(gradient: Gradient(colors: [MyColor.option_1, MyColor.option_2, MyColor.option_3, MyColor.option_4, MyColor.option_1]), center: .center, startAngle: .degrees(360), endAngle: .zero),lineWidth: 3)
+                            .frame(width: MySize.headerHeight * 0.3,height: MySize.headerHeight*0.3)
                     }
-                        .padding([.leading,.trailing], 20)
-                        .padding(.bottom, 10)
-                )
-                .edgesIgnoringSafeArea(.top)
-        }
+                        Text(env.userName)
+                            .foregroundColor(.white)
+                            .font(.system(size: 20).weight(.semibold))
+                        Spacer()
+                }
+                    
+                    //tabs
+                    HStack {
+                        TabSelector(content: "discover", state: $tabState)
+                        Spacer()
+                        OppoTabSelector(content: "saved names", state: $tabState)
+                    }
+                    
+                }.padding([.leading,.trailing],20)
+                    .padding(.bottom,10)
+            )
+            .edgesIgnoringSafeArea(.top)
+            //Spacer()
     }
 }
 
 struct DiscoverHeader: View{
+    @EnvironmentObject var env: GlobalEnvironment
     var body: some View {
         Rectangle()
             .fill(MyColor.header)
@@ -62,6 +63,8 @@ struct DiscoverHeader: View{
                     HStack {
                         Button {
                                 //return to main
+                            env.currentViewStage = .discover
+                            env.tagSelected = 0
                             }
                         label: {
                             Image(systemName: "arrow.left")
@@ -71,9 +74,12 @@ struct DiscoverHeader: View{
                                 .foregroundColor(.white)
                         }
                         Spacer()
-                        Text("Beereel")
-                            .foregroundColor(.white)
-                            .font(.system(size: 20).weight(.semibold))
+//                        Text((env.currentUser != nil) ? env.currentUser.unsafelyUnwrapped.username! : "Missing")
+//                            .foregroundColor(.white)
+//                            .font(.system(size: 20).weight(.semibold))
+                        Text(env.userName)
+                                                    .foregroundColor(.white)
+                                                    .font(.system(size: 20).weight(.semibold))
                         ZStack {
                             Image("Beereel")
                                 .resizable()
@@ -92,7 +98,7 @@ struct DiscoverHeader: View{
                             .foregroundColor(.white)
                             .font(.system(size: 30).weight(.semibold))
                         Spacer()
-                        Text("Character Name")
+                        Text(nameTagSample[env.tagSelected])
                             .foregroundColor(.white.opacity(0.4))
                             .font(.system(size: 14).weight(.light))
                     }
@@ -107,8 +113,8 @@ struct Header_Previews: PreviewProvider {
         ZStack {
             Background()
             VStack {
-                Header(tabState: true)
-                DiscoverHeader()
+                Header(tabState: true).environmentObject(GlobalEnvironment())
+                DiscoverHeader().environmentObject(GlobalEnvironment())
             }
         }
     }
