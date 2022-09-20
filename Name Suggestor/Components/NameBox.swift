@@ -37,7 +37,7 @@ struct NameBox: View {
                         // save tags that goes with name
                         if let unsortData = userDefaults.stringArray(forKey: "savedTags") {
                             savedTags = unsortData
-                            savedTags.append(content.name)
+                            savedTags.append(content.tags[0])
                         }
                     }
                 }
