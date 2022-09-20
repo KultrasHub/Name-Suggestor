@@ -38,7 +38,12 @@ struct SavedFile: View {
                 guard
                     let nameData = UserDefaults.standard.stringArray(forKey: nameKey),
                     let tagData = UserDefaults.standard.stringArray(forKey: tagKey)
-                else {return}
+                else {
+                    savedEnv.content = []
+                    savedEnv.size = 0
+                    savedEnv.tags = []
+                    return
+                }
                 //content is filter based on nameData with tag Data
                 savedEnv.content = nameData
                 savedEnv.size = nameData.count
