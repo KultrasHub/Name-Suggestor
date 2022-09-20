@@ -14,7 +14,6 @@ struct SavedNameBox: View {
     @EnvironmentObject var savedEnv:SavedEnvironment
     var body: some View {
         HStack(spacing:15){
-            Text(String(id))
             //name
             TextField("edit the name", text: $currentText)
                 .foregroundColor(.white)

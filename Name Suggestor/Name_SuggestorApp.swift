@@ -13,7 +13,7 @@ struct Name_SuggestorApp: App {
 
     var body: some Scene {
         WindowGroup {            
-            ContentView()
+            SplashScreenView()
         }
     }
 }
